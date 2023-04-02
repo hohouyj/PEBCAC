@@ -1,0 +1,1906 @@
+{
+	"options": [
+		{
+			"name": "MARINE LANDERS",
+			"points": 0,
+			"optionType": "Escort",
+			"hp": null,
+			"tenacity": 10,
+			"range": [
+				3,
+				0
+			],
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Boarding"
+			],
+			"desc": "",
+			"options": []
+		},
+		{
+			"name": "DESTROYER ESCORT",
+			"points": 2,
+			"optionType": "Escort",
+			"hp": 8,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "The pulse lances, kinetic guns, or missile batteries carried by this ESCORT count as an AUXILIARY weapon for your battlegroup. When fired alongside any PRIMARY single-target weapon targeting a CAPITAL SHIP or ESCORT within Range 3\u20130, these weapons deal 2 damage to that same target. Additionally, gain the Destroyer Command tactic.",
+			"options": [
+				{
+					"name": "DESTROYER COMMAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						3,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Choose one DESTROYER assigned to your battlegroup and give it one of the following commands: \u2022 Cannonade: Deal 3 damage to a hostile CAPITAL SHIP. \u2022 Snapflight Torpedoes: Deal 6 damage to a hostile ESCORT. \u2022 Encirclement (Limited 1): Advance or fall back one range band. You may not use this command if you have used an effect or ability to move this turn, and after using it you may not move again this turn.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "CORVETTE ESCORT",
+			"points": 1,
+			"optionType": "Escort",
+			"hp": 6,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "Designating targets for close fire support allows these escorts to rapidly track and engage them. 1/round when you LOCK ON to a ship within Range 3\u20130 you may deal 1 damage to it for each of these ESCORTS in your battlegroup, to a maximum of 4 damage. Additionally, gain the Corvette Command tactic:",
+			"options": [
+				{
+					"name": "CORVETTE COMMAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						3,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Choose one CORVETTE ESCORT assigned to your battlegroup and give it one of these commands: \u2022 Trade Blows: Deal 2 damage to a hostile Wing, or deal 4 damage to a hostile CAPITAL SHIP and take 2 damage in return. \u2022 Defensive Formation: Gain +2 Interdiction until the start of your next turn. \u2022 Gun Run (Limited 1): Deal 2 AREA-TARGET damage to a hostile battlegroup. Consuming LOCK ON from CAPITAL SHIPS or ESCORTS in that battlegroup increases this to 4 damage against those specific ships. This damage cannot be interdicted.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "SUBLINE PICKETS",
+			"points": 2,
+			"optionType": "Escort",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "These special ships are tasked with scouting the battlefield, and have already taken up their position prior to the engagement. 1/round, you or an ally of your choice may add +1 ACCURACY to a single-target attack.",
+			"options": []
+		},
+		{
+			"name": "PAYLOAD OUTRIDER ESCORT",
+			"points": 2,
+			"optionType": "Escort",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "This special ESCORT accompanies launched munitions, clearing the way for them to safely and accurately strike their targets. When you or an allied battlegroup in the same range band makes a PAYLOAD attack, you may assign this squadron to accompany that attack. If more than one PAYLOAD attack is fired at a time, choose one to accompany. Each PAYLOAD attack can only be accompanied by a single PAYLOAD OUTRIDER ESCORT. An accompanied PAYLOAD attack cannot have Flight Counters added to it from hostile effects or abilities. During the Impact Phase, add +1 damage to that attack for each Flight Counter removed from it before impact. You may also force the target battlegroup to reroll 1 Interdiction die of your choice and take the worst result; however, if this attack\u2019s damage is completely interdicted, then this ESCORT is destroyed as well.",
+			"options": []
+		},
+		{
+			"name": "PGR_GOURD LIMPETS",
+			"points": 2,
+			"optionType": "Escort",
+			"hp": null,
+			"tenacity": 10,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Boarding",
+				"Greywash"
+			],
+			"desc": "These limpet pods can only be used to perform the PGR_Gourd Command tactic.",
+			"options": [
+				{
+					"name": "PGR_GOURD COMMAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						3,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "You deploy PGR_Gourd Limpets toward a hostile Capital Ship as a boarding action. During the Boarding Phase, these limpets disgorge their contents into the ship and you give them one of the following commands: \u2022 CONSUME: Apply 3 Greywash Counters to the boarded ship on a successful boarding roll, or 1 Greywash Counter on a failure. Spending a maneuver to clear Greywash Counters also repels this unit as well. This boarding action can stack with itself. \u2022 SURGE (Limited 1): Double the number of Greywash Counters on the boarded ship. If this boarding action fails, you do not expend this command\u2019s LIMITED use.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "MINELAYERS",
+			"points": 2,
+			"optionType": "Escort",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": 2,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Reloading 2"
+			],
+			"desc": "This special ESCORT is tasked with deploying minefields. During the Logistics Phase you may order it to deploy minefields in the range band either directly ahead of you or directly behind you. Until the start of the next Logistics Phase, the first time a hostile battlegroup forces you or an allied battlegroup to move into or out of that range band, the mines detonate and the hostile battlegroup takes 10 AREATARGET damage. Due to sheer saturation, this cannot be reduced below 2 area damage by Interdiction. Minefields cannot stack with themselves.",
+			"options": []
+		},
+		{
+			"name": "PIPECLEANER SUBALTERNS",
+			"points": 2,
+			"optionType": "Escort",
+			"hp": null,
+			"tenacity": 12,
+			"range": [
+				3,
+				0
+			],
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Boarding"
+			],
+			"desc": "These fearsome combat subalterns can infiltrate and sabotage areas of a ship that would be hazardous or inaccessible for humans, such as the power storage systems for long-spool weapons. When this unit succeeds on Sabotage Fire Control against a ship with one or more CHARGE weapons, that ship must also choose one: add 1 Charge Counter to a Charge weapon of your choice or take 5 damage. A boarded ship can only suffer from this effect 1/round. Whenever a boarded ship fails a roll to repel this unit, the ship takes 2 damage.",
+			"options": []
+		},
+		{
+			"name": "CRUISER ESCORT",
+			"points": 3,
+			"optionType": "Escort",
+			"hp": 10,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "When a hostile battlegroup forces your battlegroup or an allied battlegroup in the same range band to fall back or move forward any number of range bands, you may have this ESCORT deploy a field of seeker mines that deal 4 damage to a CAPITAL SHIP or ESCORT of your choice in that battlegroup. You may use this ability 1/round for each CRUISER ESCORT in your battlegroup, but only once per instance of hostile movement. Additionally, gain the Cruiser Command tactic.",
+			"options": [
+				{
+					"name": "CRUISER COMMAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						3,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Choose one CRUISER assigned to your battlegroup and give it one of the following commands: \u2022 Fire at Will: Deal 4 damage to a hostile CAPITAL SHIP. You may also deal 2 AREA-TARGET damage to all ESCORTS in that ship\u2019s battlegroup and take 2 damage in return. This damage cannot be interdicted. \u2022 Defensive Gunnery: Gain +3 Interdiction until the start of your next turn. \u2022 Local Kill Screen (Limited 1): Deal 5 damage to a hostile CAPITAL SHIP or ESCORT, deal 2 damage to all of that ship\u2019s WINGS, and that ship makes all single-target attacks with +1 DIFFICULTY until the end of its next turn.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "LEGION DRONE NEXUS",
+			"points": 0,
+			"optionType": "Wing",
+			"hp": 4,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "1/round, you may order a LEGION DRONE NEXUS in your battlegroup to interpose itself between friendly units and incoming fire. Reduce hostile damage dealt to an ESCORT orWING in your battlegroup or an allied battlegroup in the same range band by 1. ThisWING then takes 2 damage. Additionally, gain the Legion Command tactic.",
+			"options": [
+				{
+					"name": "LEGION COMMAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						3,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Choose one LEGION DRONE NEXUS assigned to your battlegroup and give it the following command. As part of this, you may assign another unused LEGION DRONE NEXUS from your battlegroup to join the sortie, giving them the same command. Allied battlegroups in your range band may use this tactic to command your LEGION DRONE NEXUSES as if they were under their control: \u2022 Hunt/Kill: Deal 1 damage to a hostile CAPITAL SHIP, ESCORT, or WING, or deal 2 damage to a hostile ESCORT or WING and take 2 damage in return.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "FIGHTER WING",
+			"points": 1,
+			"optionType": "Wing",
+			"hp": 5,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "Gain +1 Interdiction for each FIGHTER WING as they maintain combat patrols within your fleet\u2019s perimeter, up to a maximum of +4 Interdiction. Additionally, gain the Fighter Command tactic.",
+			"options": [
+				{
+					"name": "FIGHTER COMMAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						2,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Choose one Fighter Wing assigned to your battlegroup and give it one of the following commands. As part of this, you may assign another unused Fighter Wing from your battlegroup to join the sortie, selecting the same or a different command: \u2022 Strafing Run: Deal 1 damage to a hostile CAPITAL SHIP or ESCORT. \u2022 Engage and Eliminate: Deal 3 damage to a hostile WING.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "BOMBER WING",
+			"points": 2,
+			"optionType": "Wing",
+			"hp": 5,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "Gain the Bomber Command and Active Countermeasures tactics.",
+			"options": [
+				{
+					"name": "BOMBER COMMAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						2,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Choose one BOMBER WING assigned to your battlegroup and give it the following command: \u2022 Torpedoes Away: Deal 4 damage to a hostile CAPITAL SHIP. You may assign another unused BOMBER WING from your battlegroup to assist, dealing an additional +2 damage.",
+					"options": []
+				},
+				{
+					"name": "ACTIVE COUNTERMEASURES",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						4,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Choose one BOMBER WING assigned to your battlegroup and give it the following command: \u2022 Deploy Chaff (Limited 1): Choose a CAPITAL SHIP in your battlegroup or an allied battlegroup in the same range band. Until the end of your next turn, the next time that ship takes damage reduce it by 1d3. This effect does not stack.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "MOUNTED CHASSIS WING",
+			"points": 2,
+			"optionType": "Wing",
+			"hp": 5,
+			"tenacity": 11,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Boarding"
+			],
+			"desc": "Gain the Chassis Command tactic.",
+			"options": [
+				{
+					"name": "CHASSIS COMMAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						3,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Choose a MOUNTED CHASSIS WING in your battlegroup and give it one of these commands: \u2022 Toe-to-Toe: Deal 1d3 damage to a hostile CAPITAL SHIP, ESCORT, or WING. \u2022 Breach and Clear: Assign this unit to board a hostile CAPITAL SHIP. Each time it succeeds on a boarding roll, the boarded ship takes 2 damage.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "BALOR CHASSIS WING",
+			"points": 3,
+			"optionType": "Wing",
+			"hp": 8,
+			"tenacity": 12,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Boarding",
+				"Greywash",
+				"Unique"
+			],
+			"desc": "The Balor\u2019s nanoswarm construction allows it to hellishly regenerate physical damage sustained during combat. During the Logistics Phase, this unit repairs 2 HP. Additionally, gain the Balor Command tactic.",
+			"options": [
+				{
+					"name": "BALOR COMMAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						3,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Give the BALOR CHASSISWING one of these commands: \u2022 Nanocomposite Munitions: Deal 2 damage to a hostile ESCORT or WING, or consume LOCK ON from a CAPITAL SHIP to deal 2 damage to that ship, give it 2 Greywash Counters, and take 2 damage in return. \u2022 Hive Frenzy: Assign this unit to board a hostile CAPITAL SHIP. Each time it succeeds on a boarding roll, the boarded ship gains 2 Greywash Counters. Ships do not remove Greywash Counters during the Impact Phase while this Wing is aboard them.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "BARBAROSSA CHASSIS WING",
+			"points": 3,
+			"optionType": "Wing",
+			"hp": 8,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique"
+			],
+			"desc": "The integrated flak launchers and anti-aerospace munitions carried by this WING count as an AUXILIARY weapon for your battlegroup. When fired alongside any PRIMARY single-target weapon targeting a CAPITAL SHIP or ESCORT within Range 3\u20130, these weapons deal 1 damage to that same target and 3 damage to a hostile WING in the same battlegroup. Additionally, gain the Barbarossa Command tactic.",
+			"options": [
+				{
+					"name": "BARBAROSSA COMMAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						3,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Give the BARBAROSSA CHASSIS WING one of these commands: \u2022 Siege Cannons: Deal 3 damage to a hostile CAPITAL SHIP or ESCORT. \u2022 Charge Apocalypse Rails (Reloading 2): This Wing begins charging its integrated Apocalypse Rail weapons. During the next Impact Phase, you may order it to open fire on a hostile CAPITAL SHIP or ESCORT within range. Make a single-target attack roll, dealing 2d6 damage on hit with OVERKILL and RELIABLE 4.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "MONARCH CHASSIS WING",
+			"points": 3,
+			"optionType": "Wing",
+			"hp": 8,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique"
+			],
+			"desc": "The integrated SSC-30 High-Penetration Missile Systems carried by these mechs allow them to coordinate reactive volleys of Avenger micromissiles with other strikes. 1/round whenever a weapon in your battlegroup or an allied battlegroup in the same range band critically hits a target within Range 3\u20130, even if it doesn\u2019t have the CRITICAL tag, you may use these micromissiles to deal 2 damage to a hostile CAPITAL SHIP, ESCORT, or WING. Additionally, gain the Monarch Command tactic.",
+			"options": [
+				{
+					"name": "MONARCH COMMAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						3,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Give the MONARCH CHASSIS WING one of the following commands: \u2022 Seeking Payloads: Deal 2 damage to a hostile CAPITAL SHIP or ESCORT, or consume LOCK ON from a CAPITAL SHIP or ESCORT to deal 4 damage to that ship and either deal 2 damage to all of its WINGS or remove 1 Flight Counter from one of your active PAYLOAD attacks. \u2022 Gandiva Missiles: This Wing launches a salvo of advanced Gandiva missiles. This is a PRIMARY single-target PAYLOAD attack that deals 1d6+3 damage and can be fired at up to two targets at a time, tracked individually. When using this command, you may consume LOCK ON from the target to add or remove one Flight Counter from that PAYLOAD.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "TORTUGA CHASSIS WING",
+			"points": 3,
+			"optionType": "Wing",
+			"hp": 8,
+			"tenacity": 12,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Boarding",
+				"Unique"
+			],
+			"desc": "Gain the Tortuga Command tactic.",
+			"options": [
+				{
+					"name": "TORTUGA COMMAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						3,
+						0
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Give the TORTUGA CHASSIS WING one of the following commands: \u2022 Heavy Gunner: Deal 1d3 damage to a hostile ESCORT or WING. Until the end of your next turn, the next time the TORTUGA CHASSIS WING or the ship it is equipped to takes damage from an ESCORT or WING while within Range 3\u20130, you may deal 3 damage to it in response. \u2022 Decksweepers: Repel a boarding unit from a ship in your battlegroup or in an allied battlegroup in the same range band, then deal 3 damage to that unit. \u2022 Daisy Cutters: Assign this unit to board a hostile CAPITAL SHIP. Each time it succeeds on a boarding roll, the boarded ship takes 2 damage. 2/engagement, you may increase this to 1d6+1 damage instead.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "LONG-CYCLE PRIMARY LANCE",
+			"points": 0,
+			"optionType": "Superheavy",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				0
+			],
+			"damage": "[12 damage]",
+			"reloading": null,
+			"charge": 3,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Critical",
+				"Charge 3",
+				"Reliable 3"
+			],
+			"desc": "",
+			"options": []
+		},
+		{
+			"name": "3X3 BLOCK SHORT-SPOOL CANNONS",
+			"points": 2,
+			"optionType": "Superheavy",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				1
+			],
+			"damage": "[6 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Reliable 2"
+			],
+			"desc": "When you attack with this weapon, you may also fire an AUXILIARY weapon. Additionally, 1/round when you use a maneuver that allows you to attack with a PRIMARY or SUPERHEAVY weapon, this weapon gains a special Volley Counter, up to a maximum of 2 Volley Counters. Attacking with this weapon automatically expends all Volley Counters, dealing +6 damage on hit and gaining +2 RELIABLE for each counter. When it has 2 Volley Counters this weapon also gains the CRITICAL tag. This weapon cannot gain counters and attack as part of the same action.",
+			"options": []
+		},
+		{
+			"name": "SPEARTIP ANTI-CAPITAL TORPEDOES",
+			"points": 2,
+			"optionType": "Superheavy",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				5,
+				4
+			],
+			"damage": "[25 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Payload \u20131"
+			],
+			"desc": "",
+			"options": []
+		},
+		{
+			"name": "SPINAL LINAC COHERENT BEAM CANNON",
+			"points": 2,
+			"optionType": "Superheavy",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				1
+			],
+			"damage": "[8 damage]",
+			"reloading": null,
+			"charge": 2,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Critical",
+				"Charge 2"
+			],
+			"desc": "",
+			"options": []
+		},
+		{
+			"name": "SPINAL PETAJOULE KINETIC",
+			"points": 2,
+			"optionType": "Superheavy",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				5,
+				2
+			],
+			"damage": "[15 damage]",
+			"reloading": null,
+			"charge": 3,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Accurate",
+				"Critical",
+				"Charge 3"
+			],
+			"desc": "Hit or miss, while assigning damage after firing this weapon during the Impact Phase, it deals 5 damage to a different CAPITAL SHIP or ESCORT in its target\u2019s battlegroup. If there are no other targets in the battlegroup to choose from, this ability has no effect.",
+			"options": []
+		},
+		{
+			"name": "SPINAL TACHYON LANCE",
+			"points": 3,
+			"optionType": "Superheavy",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				5,
+				3
+			],
+			"damage": "[20 damage]",
+			"reloading": null,
+			"charge": 4,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Critical",
+				"Charge 4",
+				"Reliable 10"
+			],
+			"desc": "",
+			"options": []
+		},
+		{
+			"name": "CO-CONSCIOUSNESS LANCE",
+			"points": 3,
+			"optionType": "Superheavy",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				2
+			],
+			"damage": "[2d6+2 damage]",
+			"reloading": 3,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Area-Target",
+				"Legionspace",
+				"Reloading 3"
+			],
+			"desc": "This devastating systemic attack shatters an enemy fleet legion\u2019s cohesion and deals +2 damage for each non-TEMPLATE ESCORT in the target battlegroup. After taking damage from this weapon, that battlegroup chooses one: \u2022 They must take the first NPC turn in the next Action Phase, but all rolls they make receive +1 DIFFICULTY. \u2022 They must act last in the next Action Phase, after everyone else. If multiple battlegroups suffer from this disruption effect at once, they choose a viable turn order as needed.",
+			"options": []
+		},
+		{
+			"name": "NEARLIGHT KILL-PACK",
+			"points": 3,
+			"optionType": "Superheavy",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				3
+			],
+			"damage": "[4d6 damage]",
+			"reloading": 2,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Overkill",
+				"Reloading 2"
+			],
+			"desc": "This weapon cannot be used during the first round of combat as it requires preparatory calibration. Additionally, attacks made with this weapon closer than Range 4 gain INACCURATE.",
+			"options": []
+		},
+		{
+			"name": "CONICAL KINETIC PROJECTORS",
+			"points": 0,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				2,
+				0
+			],
+			"damage": "[1d3+5 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Critical"
+			],
+			"desc": "Attacks with this weapon from further than Range 1 receive +1 DIFFICULTY.",
+			"options": []
+		},
+		{
+			"name": "DORSAL RAZORBACK MISSILES",
+			"points": 0,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				0
+			],
+			"damage": "[1d6+6 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Payload"
+			],
+			"desc": "You may consume LOCK ON as part of firing this weapon to add or remove 1 Flight Counter from it.",
+			"options": []
+		},
+		{
+			"name": "PINAKA SHIP-TO-SHIP MISSILES",
+			"points": 0,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				3,
+				0
+			],
+			"damage": "[1d6+1 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Area-Target",
+				"Payload"
+			],
+			"desc": "You may consume a hostile CAPITAL SHIP\u2019s LOCK ON when firing this weapon at its battlegroup to gain +3 damage, but it also gains +1 Flight Counter.",
+			"options": []
+		},
+		{
+			"name": "PRIMARY KINETIC BATTERIES",
+			"points": 0,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				3,
+				0
+			],
+			"damage": "[1d6+1 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Reliable 1"
+			],
+			"desc": "",
+			"options": []
+		},
+		{
+			"name": "PRIMARY SINGLE-STAGE TORPEDOES",
+			"points": 0,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				2
+			],
+			"damage": "[8 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Payload -1"
+			],
+			"desc": "",
+			"options": []
+		},
+		{
+			"name": "SHORT-CYCLE LANCE BATTERIES",
+			"points": 0,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				3,
+				0
+			],
+			"damage": "[3 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Accurate",
+				"Critical"
+			],
+			"desc": "",
+			"options": []
+		},
+		{
+			"name": "TANDEM-SPREAD TORPEDOES",
+			"points": 0,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				2
+			],
+			"damage": "[6 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Payload -1"
+			],
+			"desc": "This weapon can attack two targets at a time, firing separate PAYLOAD attacks that are tracked individually.",
+			"options": []
+		},
+		{
+			"name": "GEMINI LASER ARRAY",
+			"points": 1,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				3,
+				0
+			],
+			"damage": "[4 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target"
+			],
+			"desc": "You may spend a Tactic during your turn to set this weapon to track incoming threats. Your battlegroup and an allied battlegroup in the same range band both gain +2 Interdiction until the end of your next turn. You may not attack with this weapon in the same turn as you use this ability.",
+			"options": []
+		},
+		{
+			"name": "HEAVY KINETIC BATTERIES",
+			"points": 1,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				1
+			],
+			"damage": "[5 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Reliable 2"
+			],
+			"desc": "",
+			"options": []
+		},
+		{
+			"name": "LAMPREY BOARDING TORPEDOES",
+			"points": 1,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": 11,
+			"range": [
+				4,
+				1
+			],
+			"damage": "[8 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Weapon",
+				"Single-Target",
+				"Boarding",
+				"Payload \u20131"
+			],
+			"desc": "When you damage a CAPITAL SHIP with this weapon, that ship is immediately boarded by subalterns and suffers the effects of a successful Sabotage Fire Control, Sever Comms, or Assault CIC boarding action of your choice (p. 42); however, if this torpedo\u2019s damage is reduced to 0 or otherwise negated then this effect is negated as well. You may make multiple boarding actions with this weapon at a time.",
+			"options": []
+		},
+		{
+			"name": "LONG-FLIGHT ACTIVE CONTROL MISSILES",
+			"points": 1,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				5,
+				1
+			],
+			"damage": "[1d6+8 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Payload"
+			],
+			"desc": "You may consume a hostile ship\u2019s LOCK ON at any point during your turn to change the target of any active LONG-FLIGHT ACTIVE CONTROL MISSILE PAYLOAD attacks under your control to that ship. Additionally, if this weapon\u2019s current target is ever destroyed or flees the engagement before its payload impacts, you may choose to have that payload remain active and continue to remove Flight Counters instead of self-destructing. If it reaches 0 Flight Counters without a target it automatically self-destructs without any effect.",
+			"options": []
+		},
+		{
+			"name": "DARKSTAR MULTIPLE-WARHEAD TORPEDOES",
+			"points": 2,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				2
+			],
+			"damage": "[6 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Area-Target",
+				"Payload \u20131"
+			],
+			"desc": "After firing this weapon, onboard systems begin calibrating its multiple warheads for dispersal which takes until the start of your next turn. After calibration is complete, if this weapon\u2019s damage is not completely interdicted, it deals +1d6 damage after Interdiction.",
+			"options": []
+		},
+		{
+			"name": "LEGIONSPACE SCHISM",
+			"points": 2,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				2
+			],
+			"damage": "[3 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Accurate",
+				"Legionspace"
+			],
+			"desc": "On hit, choose one: \u2022 An allied battlegroup may advance one range band or ignore all hostile effects that would force it to move until the end of its next turn. Each battlegroup can only benefit from this effect 1/round. \u2022 If the target\u2019s battlegroup has any active PAYLOAD attacks in transit, it must choose one: take an additional 5 damage or add 1 Flight Counter to an active PAYLOAD attack of your choice.",
+			"options": []
+		},
+		{
+			"name": "MASS ACCELERATOR TURRETS",
+			"points": 2,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				2,
+				0
+			],
+			"damage": "[1d6+1 damage]",
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [
+				"Single-Target",
+				"Overkill",
+				"Reliable 3"
+			],
+			"desc": "When you attack with this weapon, you may also deal 3 damage to a hostile ESCORT (which cannot be the same target as the attack) or up to two hostile WINGS.",
+			"options": []
+		},
+		{
+			"name": "THROUGHLINE SKIP DRONE",
+			"points": 2,
+			"optionType": "Primary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				3
+			],
+			"damage": null,
+			"reloading": null,
+			"charge": 2,
+			"limited": 1,
+			"unique": true,
+			"tags": [
+				"Single-Target",
+				"Overkill",
+				"Unique",
+				"Charge 2",
+				"Limited 1"
+			],
+			"desc": "This weapon does not automatically begin removing Charge Counters. It begins charging when you choose a hostile CAPITAL SHIP at the start of the Logistics Phase. Unlike other CHARGE weapons, this weapon must fire as soon as it is fully charged \u2013 it cannot be held. Instead of attacking normally, roll 1d20: On 10+, this weapon hits, dealing 3d6 damage to the target and dealing 1d6+1 damage to all ESCORTS in its battlegroup. On 9 or less, or if your battlegroup is outside this weapon\u2019s effective range when it finishes charging, this weapon misses its optimal delivery window and only deals 1d6+1 damage to the target. This weapon\u2019s attack roll, damage, and range cannot be modified in any way, and Charge Counters cannot be added to or removed from it by other effects.",
+			"options": []
+		},
+		{
+			"name": "FLYSWATTER MISSILES",
+			"points": 0,
+			"optionType": "Auxiliary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				3,
+				0
+			],
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "When fired alongside any PRIMARY weapon, this weapon deals 2 damage to up to two WINGS in the target\u2019s battlegroup.",
+			"options": []
+		},
+		{
+			"name": "MESSENGER LEAD LASER",
+			"points": 0,
+			"optionType": "Auxiliary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				4,
+				2
+			],
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "This weapon cannot be fired alongside other weapons. Instead, whenever your battlegroup is within this weapon\u2019s range during the Logistics Phase you may choose one of your PAYLOAD attacks that has reached 0 Flight Counters. That attack deals +1 damage for each instance of this weapon in your battlegroup, to a maximum of +4 damage.",
+			"options": []
+		},
+		{
+			"name": "HARBINGER CONFIDENCE LASERS",
+			"points": 1,
+			"optionType": "Auxiliary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				5,
+				3
+			],
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "This weapon cannot be fired alongside other weapons. Instead, 1/round when your battlegroup is within this weapon\u2019s range and you remove a Charge Counter from a weapon, you may automatically deal 2 damage to a hostile CAPITAL SHIP or ESCORT of your choice for each instance of this weapon in your battlegroup, to a maximum of 4 damage.",
+			"options": []
+		},
+		{
+			"name": "SECONDARY TURRETS",
+			"points": 0,
+			"optionType": "Auxiliary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				3,
+				0
+			],
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "When fired alongside any PRIMARY single-target weapon targeting a hostile CAPITAL SHIP or ESCORT, this weapon deals 1 damage to that same target.",
+			"options": []
+		},
+		{
+			"name": "NEARSPACE DIRECTED-ENERGY PERFORATORS",
+			"points": 1,
+			"optionType": "Auxiliary",
+			"hp": null,
+			"tenacity": null,
+			"range": [
+				2,
+				0
+			],
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "When fired alongside any PRIMARY single-target weapon targeting a hostile CAPITAL SHIP or ESCORT, this weapon deals 1 damage to that same target and 2 damage to a hostile WING. In addition, while your battlegroup is within this weapon\u2019s effective range, it gains +1 Interdiction for each instance of this weapon in the battlegroup, to a maximum of +4 Interdiction.",
+			"options": []
+		},
+		{
+			"name": "CLOUDKILL KINETICS",
+			"points": 2,
+			"optionType": "Auxiliary",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": 2,
+			"unique": false,
+			"tags": [
+				"Limited 2"
+			],
+			"desc": "When fired alongside any PRIMARY weapon, you launch a kill-cloud of kinetic projectiles that threatens enemies attempting to approach you along predicted routes. Choose your own battlegroup or an allied battlegroup in the same range band: until the end of your next turn, each time a hostile ESCORT orWING makes an attack roll against or deals damage to the selected battlegroup during the Action Phase, it automatically takes 1d6+1 damage. If this damage is enough to destroy the attacker, it is destroyed before it can carry out its attack or action and its effects are negated. Each battlegroup can only benefit from one kill-cloud at a time.",
+			"options": []
+		},
+		{
+			"name": "AGGRESSIVE COMMANDERS",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique"
+			],
+			"desc": "All single-target attacks made by and against you at Range 2-0 gain +1 ACCURACY. Additionally, 1/ engagement, you may choose one: \u2022 When a hostile effect or ability forces your battlegroup to move forward any number of range bands, one of your CAPITAL SHIPS gains 5 OVERSHIELD. \u2022 When a hostile effect or ability forces an allied battlegroup to move forward any number of range bands, your battlegroup moves instead. If this prevents a hostile ship from targeting the allied battlegroup with an attack or ability as part of that same action, it may target you instead.",
+			"options": []
+		},
+		{
+			"name": "BRACE FOR IMPACT",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": 1,
+			"unique": true,
+			"tags": [
+				"Unique",
+				"Limited 1"
+			],
+			"desc": "Choose one when you use this system: \u2022 You may activate this system during the Impact Phase after attacks have been rolled and damage has been assigned: all damage taken by ships in your battlegroup is reduced by half until the end of your next turn. You may not use any tactics or perform any maneuvers during your next turn except for All Ahead Full or Retrograde Burn. \u2022 You may use the Brace for Impact tactic below during your turn.",
+			"options": [
+				{
+					"name": "BRACE FOR IMPACT",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "Your battlegroup becomes BOLSTERED until the end of your next turn.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "BULWARK REDUNDANCIES",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "This ship gains +3 HP. This system can only be taken once per ship.",
+			"options": []
+		},
+		{
+			"name": "CLEARED TO LAND",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique"
+			],
+			"desc": "Gain the Cleared to Land tactic.",
+			"options": [
+				{
+					"name": "CLEARED TO LAND",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "All of your ESCORTS and WINGS or all ESCORTS and WINGS belonging to an allied battlegroup in the same range band as you repair 2 HP. One ESCORT or WING of your choice in that battlegroup may repair 4 HP instead.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "FIGHTER LAUNCH CATAPULTS",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique"
+			],
+			"desc": "This ship gains +1 WING slot.",
+			"options": []
+		},
+		{
+			"name": "FIRE FOR EFFECT",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique"
+			],
+			"desc": "Gain the Fire for Effect tactic:",
+			"options": [
+				{
+					"name": "FIRE FOR EFFECT",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "Nominate a hostile battlegroup as a priority target. Until the start of the next Logistics Phase, all single-target attacks made against that battlegroup gain +1 ACCURACY.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "INSIGHTFUL COMMANDERS",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique"
+			],
+			"desc": "1/round, when a hostile effect or ability forces you to move back or forward any number of range bands, your next single-target attack gains +1 ACCURACY, or +2 ACCURACY if you are attacking from Range 5-4. This effect lasts until the end of your next turn and does not stack. Additionally, 1/engagement when moved by a hostile effect or ability, you may instead attack with a single PRIMARY weapon of your choice before or after the hostile movement.",
+			"options": []
+		},
+		{
+			"name": "PIPER DRONES",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": 1,
+			"unique": true,
+			"tags": [
+				"Unique",
+				"Limited 1"
+			],
+			"desc": "During the Logistics Phase, you may choose one: \u2022 Add 1 Flight Counter to an active hostile PAYLOAD attack targeting one of your ships or your battlegroup. \u2022 Redirect an active hostile PAYLOAD attack toward one of your ships or your battlegroup.",
+			"options": []
+		},
+		{
+			"name": "PREDICT/OVERLAY SHIELD PROJECTOR",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": 1,
+			"unique": true,
+			"tags": [
+				"Unique",
+				"Limited 1"
+			],
+			"desc": "During the Impact Phase, you may reduce incoming damage assigned to a CAPITAL SHIP in your battlegroup from a SUPERHEAVY weapon by 6. At Range 5, this damage reduction is increased to 10 instead.",
+			"options": []
+		},
+		{
+			"name": "SINGLE-PLANE SHIELD",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": 1,
+			"unique": false,
+			"tags": [
+				"Limited 1"
+			],
+			"desc": "During the Impact Phase, you may reroll your Interdiction roll and take the best result.",
+			"options": []
+		},
+		{
+			"name": "STEADY\u2026 NOW!",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique"
+			],
+			"desc": "Gain the Steady\u2026 Now! tactic:",
+			"options": [
+				{
+					"name": "STEADY\u2026 NOW!",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "Choose a weapon in your battlegroup with the CHARGE tag. Your next attack with that weapon gains +1 ACCURACY and +X RELIABLE, where X is based on your range band (i.e., Extreme Range grants +5, Long Range grants +4, etc).",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "VETERAN CREWS",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": 1,
+			"unique": false,
+			"tags": [
+				"Limited 1"
+			],
+			"desc": "You may reroll one of your attack rolls but must keep the second result. On a reroll result of 20+, you do not expend this system\u2019s Limited use.",
+			"options": []
+		},
+		{
+			"name": "ECHOPRAXIC IMAGO",
+			"points": 1,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": 10,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Boarding",
+				"Legionspace",
+				"Unique"
+			],
+			"desc": "This electronic warfare system can only be used to perform the Echopraxic Imago tactic:",
+			"options": [
+				{
+					"name": "ECHOPRAXIC IMAGO",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": [
+						5,
+						3
+					],
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "You introduce a viral logic bomb into the systems of a hostile CAPITAL SHIP, which is treated as a boarding action. This bomb takes hold during the Boarding Phase, attempting one of the following commands (your choice): \u2022 Induce Nostalgic Loop: Until the end of its next turn, the boarded ship\u2019s battlegroup rolls twice for Interdiction and takes the worse result. While this effect is active, if any of the affected battlegroup\u2019s final Interdiction rolls result in a 1 on any die, the affected ship takes 3 damage. \u2022 Inflict Ontological Parasite: Choose a range band. Until the end of its next turn, the boarded battlegroup\u2019s attack rolls against targets in that range band have a 50 percent chance to miss outright before the attack is made. Roll a die or flip a coin to determine if the attack misses. This does not stack with Defensive Screen; the defender chooses which effect to apply. Additionally, the boarded battlegroup cannot choose that range band for abilities that affect or target specific ranges.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "SUBLINE BERTH",
+			"points": 0,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique"
+			],
+			"desc": "This ship gains +1 ESCORT slot.",
+			"options": []
+		},
+		{
+			"name": "IMPOSSIBLE DODGE",
+			"points": 1,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": 3,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Legionspace",
+				"Unique",
+				"Reloading 3"
+			],
+			"desc": "During the Logistics Phase, you may choose one of your ships. The use of sudden counterfactual positioning \u201cremoves that ship from play\u201d until the end of your next turn. While removed from play it: \u2022 can\u2019t be targeted by attacks and effects or take damage \u2022 can\u2019t use any weapons, upgrades, or traits \u2022 doesn\u2019t provide any other benefits to your battlegroup, including INTERDICTION bonuses \u2022 automatically evades all active PAYLOAD attacks that reach 0 Flight Counters during the same Logistics Phase as this system was used. AREA-TARGET PAYLOAD attacks deal damage to the other ships in the battlegroup as normal.",
+			"options": []
+		},
+		{
+			"name": "POWER DISTRIBUTION SYSTEMS",
+			"points": 1,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique"
+			],
+			"desc": "Gain the Divert Power to Defenses and Divert Power to Weapons tactics:",
+			"options": [
+				{
+					"name": "DIVERT POWER TO DEFENSES",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": 2,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [
+						"Reloading 2"
+					],
+					"desc": "Add 1 Charge Counter to a CHARGE weapon in your battlegroup. The ship equipped with that weapon gains +2 Defense and your battlegroup gains +1d6 Interdiction until the end of your next turn.",
+					"options": []
+				},
+				{
+					"name": "DIVERT POWER TO WEAPONS",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "You shunt power from a ship\u2019s defenses straight into weapon systems. Remove 1 Charge Counter from a CHARGE weapon in your battlegroup, but all attacks against the ship equipped with that weapon gain +1 ACCURACY and damage reduction from Interdiction applied to that ship is only half as effective (requiring 2 Interdiction to prevent 1 damage) until the end of your next turn.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "SUBJECTIVE SYZYGY",
+			"points": 1,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": 3,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Legionspace",
+				"Unique",
+				"Reloading 3"
+			],
+			"desc": "When a hostile ship makes a single-target attack roll against a ship in your battlegroup or an allied ship in your range band, you may force them to reroll the attack and take the worst result.",
+			"options": []
+		},
+		{
+			"name": "ANTICOGNITION HYPERFRACTAL",
+			"points": 2,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": 3,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Legionspace",
+				"Unique",
+				"Reloading 3"
+			],
+			"desc": "During the Logistics Phase, you may add 1 Flight Counter to up to two active hostile PAYLOAD attacks. A hostile battlegroup with PAYLOAD attacks affected by this may ignore it by taking 3 AREA-TARGET damage per Flight Counter negated. This damage cannot be interdicted. If the effect on one or both PAYLOAD attacks is ignored, immediately remove 1 Refresh Counter from this system.",
+			"options": []
+		},
+		{
+			"name": "LEGIONSPACE COORDINATOR",
+			"points": 2,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Legionspace",
+				"Unique"
+			],
+			"desc": "Gain the Exploit Positioning maneuver.",
+			"options": [
+				{
+					"name": "EXPLOIT POSITIONING",
+					"points": 0,
+					"optionType": "Maneuver",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": 3,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [
+						"Reloading 3"
+					],
+					"desc": "Nominate an allied battlegroup. It may take an additional maneuver on its player\u2019s next turn.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "AURORA STEALTH SHROUDING",
+			"points": 3,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique"
+			],
+			"desc": "Whenever your battlegroup moves or is moved two or more range bands during a round, you immediately become BOLSTERED until the start of the next Action Phase. If you are already BOLSTERED, you may clear LOCK ON from a CAPITAL SHIP in your battlegroup instead. Additionally, gain the Whiteout maneuver and Thermal Spoofing tactic.",
+			"options": [
+				{
+					"name": "WHITEOUT",
+					"points": 0,
+					"optionType": "Maneuver",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "Your battlegroup may fall back or advance one range band and is then obscured by a massive flare of thermal energy that blinds enemy sensors. While obscured, your battlegroup and its ships: \u2022 can\u2019t be targeted by attacks and effects or take damage \u2022 can\u2019t use any weapons, upgrades, or traits \u2022 don\u2019t provide any other benefits Your battlegroup continues to add and remove counters during the Logistics Phase as normal. Payload attacks targeting your battlegroup or ships during this time cannot go below 1 Flight Counter by any means. Your battlegroup reappears during the next Impact Phase after all other battlegroups have chosen targets and rolled to hit. You may then choose targets and roll to hit with any ready CHARGE weapons. The damage from your CHARGE weapons is applied before any other damage is rolled. If this is enough to destroy a hostile ship, it is destroyed before it can fire its own CHARGE weapons and its damage and any other effects are negated. The ship equipped with this upgrade then takes 1d6 damage from thermal overload that ignores OVERSHIELD and cannot be prevented in any way.",
+					"options": []
+				},
+				{
+					"name": "THERMAL SPOOFING",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": 2,
+					"charge": null,
+					"limited": 2,
+					"unique": false,
+					"tags": [
+						"Limited 2",
+						"Reloading 2"
+					],
+					"desc": "Choose up to two of the following effects: \u2022 Clear LOCK ON from a CAPITAL SHIP in your battlegroup or from an allied CAPITAL SHIP in the same range band. \u2022 Add 1 Flight Counter to an active PAYLOAD attack targeting your battlegroup or any of your ships. \u2022 All single-target attacks against a single CAPITAL SHIP in your battlegroup receive +1 DIFFICULTY until the end of your next turn.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "SUBALTERN COMBAT CREWS",
+			"points": 2,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": 3,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique",
+				"Reloading 3"
+			],
+			"desc": "You may use an additional Tactic during your turn.",
+			"options": []
+		},
+		{
+			"name": "SMARTSCREEN",
+			"points": 1,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": false,
+			"tags": [],
+			"desc": "This ship is orbited by a screen of baffler drones. The first single-target attack made against it each round receives +1 DIFFICULTY.",
+			"options": []
+		},
+		{
+			"name": "BATTLESPACE CIC",
+			"points": 3,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Legionspace",
+				"Unique"
+			],
+			"desc": "When you assign FRIGATES to a Defensive Screen, you may assign them to allied battlegroups in the range band either directly ahead of you or directly behind you. Additionally, gain the Adjust Bearing maneuver and Coordinated Impact tactic:",
+			"options": [
+				{
+					"name": "ADJUST BEARING",
+					"points": 0,
+					"optionType": "Maneuver",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": 2,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [
+						"Reloading 2"
+					],
+					"desc": "Your battlegroup may fall back or advance one range band, and you may move an allied battlegroup back or forward one range band. If you use this maneuver at Range 5-3, you may also LOCK ON to a hostile CAPITAL SHIP or ESCORT.",
+					"options": []
+				},
+				{
+					"name": "COORDINATED IMPACT",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": 2,
+					"charge": null,
+					"limited": 2,
+					"unique": false,
+					"tags": [
+						"Limited 2",
+						"Reloading 2"
+					],
+					"desc": "Choose one: \u2022 Add or remove 1 Flight Counter from up to two of your active PAYLOAD attacks or those belonging to allied battlegroups. \u2022 Choose two weapons belonging to you or allied battlegroups and extend their maximum and minimum ranges by 1 for their next attack (for example, a weapon with Range 4-2 would have Range 5-1). This effect does not stack.",
+					"options": []
+				}
+			]
+		},
+		{
+			"name": "\u201cSANDSTORM\u201d VANGUARD",
+			"points": 3,
+			"optionType": "System",
+			"hp": null,
+			"tenacity": null,
+			"range": null,
+			"damage": null,
+			"reloading": null,
+			"charge": null,
+			"limited": null,
+			"unique": true,
+			"tags": [
+				"Unique"
+			],
+			"desc": "Your battlegroup gains +2 INTERDICTION, and the Slingshot maneuver and Lithoscreen tactic:",
+			"options": [
+				{
+					"name": "SLINGSHOT",
+					"points": 0,
+					"optionType": "Maneuver",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "Your battlegroup may advance one range band forward, after which you lob a group of asteroids at a hostile CAPITAL SHIP. This counts as an attack using the following profile: SUPERHEAVY, SINGLE/AREA-TARGET, PAYLOAD Range 3\u20130, 10 single-target damage + 4 areatarget damage Interdiction against this attack is applied to its AREA-TARGET damage first. This attack ignores hostile effects and abilities that add or remove Flight Counters or destroy Payload attacks. On hit, this attack erupts into a dangerous cloud of debris that lasts until the start of the next Logistics Phase. For this duration, the next time the target battlegroup would use an ability or effect that forces you or an allied battlegroup to move, it takes 2d6 AREA-TARGET damage and all of its single-target attack rolls receive +1 DIFFICULTY until the end of its next turn.",
+					"options": []
+				},
+				{
+					"name": "LITHOSCREEN",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": 2,
+					"charge": null,
+					"limited": 2,
+					"unique": false,
+					"tags": [
+						"Limited 2",
+						"Reloading 2"
+					],
+					"desc": "One Capital Ship in your battlegroup gains 5 OVERSHIELD. The next time a hostile CAPITAL SHIP, ESCORT, or WING reduces this OVERSHIELD to 0 during the Action Phase, the attacker takes 3 damage.",
+					"options": []
+				}
+			]
+		}
+	]
+}
