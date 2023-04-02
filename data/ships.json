@@ -1,0 +1,1852 @@
+{
+	"ships": [
+		{
+			"points": 3,
+			"shipPrefix": "GMS",
+			"class": "CASPIAN SEA-CLASS",
+			"type": "FRIGATE",
+			"hp": 16,
+			"defense": 10,
+			"traits": [
+				{
+					"name": "FIRE CONTROL NETWORKING",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "1/round when an allied battlegroup in your range band consumes LOCK ON as part of an attack, it may reroll that attack but must keep the second result. Additionally, when this ship is assigned to a Defensive Screen, it may LOCK ON to a hostile CAPITAL SHIP or ESCORT.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Auxiliary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 3,
+			"shipPrefix": "GMS",
+			"class": "HURON-CLASS",
+			"type": "FRIGATE",
+			"hp": 16,
+			"defense": 10,
+			"traits": [
+				{
+					"name": "FLAK SCREEN",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Whenever a hostile ESCORT or WING makes an attack roll against or deals damage to any of your CAPITAL SHIPS, ESCORTS, or WINGS during the Action Phase, roll 1d20. On 10+, the attacker first takes 3 damage. If this damage is enough to destroy it, it is destroyed before it can carry out its attack or action and any effects are negated. When this frigate is assign to a Defensive Screen, this trait applies to the battlegroup it is screening for and the roll automatically succeeds. This trait does not stack. Instead, whenever multiple ships with this trait are part of or are screening the same battlegroup, choose one to use this trait and increase its damage by +1 for each ship with this trait beyond the first.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Auxiliary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 3,
+			"shipPrefix": "GMS",
+			"class": "SUPERIOR-CLASS",
+			"type": "FRIGATE",
+			"hp": 16,
+			"defense": 10,
+			"traits": [
+				{
+					"name": "REPAIR DRONES",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "When this FRIGATE is assigned to a Defensive Screen, the ship it is screening for repairs 2 HP.",
+					"options": []
+				},
+				{
+					"name": "FLEET TRIAGE",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "One of your CAPITAL SHIPS or ESCORTS, or an allied CAPITAL SHIP or ESCORT in your range band, repairs 5 HP.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 3,
+			"shipPrefix": "HA",
+			"class": "CREIGHTON-CLASS(OVERSEER)",
+			"type": "FRIGATE",
+			"hp": 12,
+			"defense": 10,
+			"traits": [
+				{
+					"name": "PURPOSE-BUILT",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship can only equip SUPERHEAVY weapons with the CHARGE tag. SUPERHEAVY weapons equipped to this frigate cost 1 point less, to a minimum of 0.",
+					"options": []
+				},
+				{
+					"name": "CALIBRATED FIRING PLATFORM",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "When at Extreme or Long Range, this ship gains a flat +1 to its attack rolls and its attacks gain +3 RELIABLE. Additionally, 1/engagement, you may reroll one attack this ship makes from Extreme or Long Range, but must keep the second result.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Superheavy"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 3,
+			"shipPrefix": "HA",
+			"class": "CREIGHTON-CLASS(VEGA-PATTERN)",
+			"type": "FRIGATE",
+			"hp": 12,
+			"defense": 10,
+			"traits": [
+				{
+					"name": "PURPOSE-BUILT",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship can only equip SUPERHEAVY weapons with the CHARGE tag. SUPERHEAVY weapons equipped to this frigate cost 1 point less, to a minimum of 0.",
+					"options": []
+				},
+				{
+					"name": "VEGA-PATTERN TARGETING LASER",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship is equipped with an integrated long-range \"hot\" targeting laser matrix that counts as a PRIMARY weapon with the following profile:",
+					"options": [
+						{
+							"name": "VEGA-PATTERN TARGETING LASER",
+							"points": 0,
+							"optionType": "Primary",
+							"hp": null,
+							"tenacity": null,
+							"range": [
+								5,
+								2
+							],
+							"damage": null,
+							"reloading": null,
+							"charge": null,
+							"limited": null,
+							"unique": false,
+							"tags": [
+								"Weapon",
+								"Single-Target",
+								"Reliable 2"
+							],
+							"desc": "On hit, LOCK ON to the target.",
+							"options": []
+						}
+					]
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Superheavy"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 4,
+			"shipPrefix": "HA",
+			"class": "HOUSTOUN-CLASS",
+			"type": "FRIGATE",
+			"hp": 14,
+			"defense": 12,
+			"traits": [
+				{
+					"name": "ENHANCED LOGISTICS",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 2,
+					"unique": false,
+					"tags": [
+						"Limited 2"
+					],
+					"desc": "1/round, you may expend a use of this trait during the Logistics Phase to remove 1 Refresh Counter from any RELOADING weapon, upgrade, or ability in your battlegroup or an allied battlegroup in the same range band. That weapon, upgrade, or ability can only have a single counter removed this wat between uses.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 4,
+			"shipPrefix": "HA",
+			"class": "TURENNE-CLASS",
+			"type": "FRIGATE",
+			"hp": 14,
+			"defense": 12,
+			"traits": [
+				{
+					"name": "ACTIVE DEFENSE",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "When this ship is assigned to a Defensive Screen, that battlegroup gains +3 Interdiction.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Auxiliary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Auxiliary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 3,
+			"shipPrefix": "FKS",
+			"class": "CIRSIUM-CLASS",
+			"type": "FRIGATE",
+			"hp": 14,
+			"defense": 10,
+			"traits": [
+				{
+					"name": "HONOR GUARD",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "1/round when this ship takes damage from any source while it has an ESCORT equipped, it instead takes 0 damage and the ESCORT takes that amount of damage instead.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Escort"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 2,
+			"shipPrefix": "FKS",
+			"class": "ONOPORDUM-CLASS",
+			"type": "FRIGATE",
+			"hp": 14,
+			"defense": 10,
+			"traits": [
+				{
+					"name": "STEALING LUCK FROM THE DEVIL",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "1/engagement, you may add or subtract 1d3 from any d20 roll (yours, an ally's, or an enemy's) after seeing the result. Each roll can only be modified in this way once, even if you or your allies have more than one ship with this trait. Additionally, when this ship is assigned to a Defensive Screen, Interception is determined by a d20 roll - on a result of 10+, Interception succeeds.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 5,
+			"shipPrefix": "FKS",
+			"class": "TOLUMNIA-CLASS",
+			"type": "FRIGATE",
+			"hp": 16,
+			"defense": 10,
+			"traits": [
+				{
+					"name": "SYNCHRONIZED BATTERIES",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "1/round when this ship consumes LOCK ON as part of an attack with one of its PRIMARY weapons, it may forego the usual bonus from LOCK ON; instead, it may make an additional attack at +1 DIFFICULTY against the same target with its other PRIMARY weapon.",
+					"options": []
+				},
+				{
+					"name": "SPECIALIZED MOUNTINGS",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship cannot equip PAYLOAD weapons.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 4,
+			"shipPrefix": "IPS-N",
+			"class": "BAKUNAWA-CLASS",
+			"type": "FRIGATE",
+			"hp": 18,
+			"defense": 8,
+			"traits": [
+				{
+					"name": "POCKET CARRIER",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Each Logistics Phase, one of this ship's WINGS may repair 2HP. Additionally, when this ship is assigned to a Defensive Screen, you may also issue a command to one of its WINGS for free.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 4,
+			"shipPrefix": "IPS-N",
+			"class": "LAHO-CLASS",
+			"type": "FRIGATE",
+			"hp": 18,
+			"defense": 8,
+			"traits": [
+				{
+					"name": "ROTARY LAUNCH TUBES",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "You may choose to reduce the starting Flight Counters of any PAYLOAD weapon equipped to this ship by 1, to a minimum of 1.",
+					"options": []
+				},
+				{
+					"name": "TORPEDO BOAT",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship can only equip PRIMARY weapons with the PAYLOAD tag.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 4,
+			"shipPrefix": "IPS-N",
+			"class": "MINOKAWA-CLASS",
+			"type": "FRIGATE",
+			"hp": 18,
+			"defense": 8,
+			"traits": [
+				{
+					"name": "RAPID REACTION FORCE",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship rolls to repel boarders with +1 ACCURACY. Additionally, when it is assigned to a Defensive Screen, all boarding actions made against it and the ship it is screening receive +1 DIFFICULTY.",
+					"options": []
+				},
+				{
+					"name": "PATROL CUTTER",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship has a special modular slot that can be used to equip either an ESCORT or WING. It can only equip ESCORTS and WINGS with the BOARDING tag.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 4,
+			"shipPrefix": "GMS",
+			"class": "AMAZON-CLASS",
+			"type": "LINE CARRIER",
+			"hp": 14,
+			"defense": 14,
+			"traits": [
+				{
+					"name": "RAPID PRINTING",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Instead of the additional 3 points CARRIERS get to spend on ESCORTS and WINGS, this ship has an additional 4 points. Additionally, this ship features an enhanced flight decks with Limited 2 rapid printing systems. 1/round during the Logistics Phase, you may expend a use to repair one of this ship's WINGS to full HP, even if it has been destroyed.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 4,
+			"shipPrefix": "GMS",
+			"class": "TONGASS-CLASS",
+			"type": "LINE CARRIER",
+			"hp": 14,
+			"defense": 14,
+			"traits": [
+				{
+					"name": "CLOSE SUPPORT",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Allied battlegroups in your range band may use tactics granted by this ship's ESCORTS as if they were under their control.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Auxiliary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Auxiliary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Escort"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"Escort"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 5,
+			"shipPrefix": "HA",
+			"class": "FARRAGUT-CLASS",
+			"type": "STARFIELD CARRIER",
+			"hp": 16,
+			"defense": 13,
+			"traits": [
+				{
+					"name": "MODULAR DESIGN",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship has a special modular slot that can be used to equip and an AUXILIARY weapon, a System, an ESCORT, or a WING.",
+					"options": []
+				},
+				{
+					"name": "FLEET COORDINATOR",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "When you assign a FRIGATE to a Defensive Screen, it may screen for up to two ships at once.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"Modular"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 6,
+			"shipPrefix": "FKS",
+			"class": "TAGETES-CLASS",
+			"type": "AGILE CARRIER",
+			"hp": 14,
+			"defense": 15,
+			"traits": [
+				{
+					"name": "SINGULARITY CATAPULTS",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "WINGS equipped by this ship increase both the maximum and minimum ranges of all of thier effects and abilities by 1. For example, a WING that would usually have Range 2-0 is instead Range 3-1.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 4,
+			"shipPrefix": "IPS-N",
+			"class": "TAWA-CLASS",
+			"type": "MEDIUM CARRIER",
+			"hp": 16,
+			"defense": 12,
+			"traits": [
+				{
+					"name": "AWAY TEAMS",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship's BOARDING upgrades gain +2 TENACITY.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Escort"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 6,
+			"shipPrefix": "IPS-N",
+			"class": "MASAUWU-CLASS",
+			"type": "HEAVY CARRIER-FRAME",
+			"hp": 16,
+			"defense": 12,
+			"traits": [
+				{
+					"name": "WOLFPACK TACTICS",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "1/round when you use a tactic to command one of this ship's ESCORTS, you may also issue a command to another of its ESCORTS or WINGS for free.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Escort"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"Escort"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 6,
+			"shipPrefix": "GMS",
+			"class": "MURIE-CLASS",
+			"type": "BATTLESHIP",
+			"hp": 25,
+			"defense": 12,
+			"traits": [
+				{
+					"name": "PARAGON",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "1/round, you may add +1 ACCURACY to any roll made by you or an allied battlegroup in the same range band. 1/engagement, you may add +3 ACCURACY instead.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Superheavy"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Auxiliary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"Auxiliary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 4,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 7,
+			"shipPrefix": "GMS",
+			"class": "THOREAU-CLASS",
+			"type": "BATTLESHIP",
+			"hp": 25,
+			"defense": 12,
+			"traits": [
+				{
+					"name": "BARRAGE DOCTRINE",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "When you fire a PRIMARY weapon as part of All Ahead Full, you may use two AUXILIARY weapons alongside it instead of one.",
+					"options": []
+				},
+				{
+					"name": "UNLEASH HELL",
+					"points": 0,
+					"optionType": "Maneuver",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "You may fire one SUPERHEAVY weapon and up to two PRIMARY weapons, or up to four PRIMARY weapons. You cannot use this maneuver if you have already moved this turn.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Superheavy"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"Auxiliary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 4,
+					"points": 0,
+					"types": [
+						"Auxiliary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 7,
+			"shipPrefix": "HA",
+			"class": "LOUIS XIV-CLASS",
+			"type": "DREADNOUGHT",
+			"hp": 15,
+			"defense": 13,
+			"traits": [
+				{
+					"name": "PINPOINT AEGIS",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "Your battlegroup gains +1d6 Interdiction. Additionally, this ship begins each engagement with 5 OVERSHIELD and gains 5 OVERSHIELD at the start of each Logistics Phase. While this ship has OVERSHIELD, it gains +2 DEFENSE.",
+					"options": []
+				},
+				{
+					"name": "PROJECTED BLACKSHIELD",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "Your battlegroup or an allied battlegroup of your choice gains +3d6 Interdiction and a ship of your choice in that battlegroup gains +4 DEFENSE until the end of the next Impact Phase. While this effect is active, the chosen ship is immune to critical hits.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Superheavy"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 7,
+			"shipPrefix": "HA",
+			"class": "MICHEL NEY-CLASS",
+			"type": "DREADNOUGHT",
+			"hp": 25,
+			"defense": 12,
+			"traits": [
+				{
+					"name": "BLINKSPACE CARVER",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "When you use the Retrograde Burn maneuver, you may also fire a Primary weapon. This may be done before or after moving.",
+					"options": []
+				},
+				{
+					"name": "TACTICAL BLINKTUNNELER",
+					"points": 0,
+					"optionType": "Maneuver",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "Your battlegroup may fall back or advance one range band, and becomes BOLSTERED until the end of your next turn. You may also fire one SUPERHEAVY weapon or up to two Primary weapons either before or after moving.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Superheavy"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 7,
+			"shipPrefix": "FKS",
+			"class": "CALENDULA-CLASS",
+			"type": "BATTLECRUISER",
+			"hp": 23,
+			"defense": 13,
+			"traits": [
+				{
+					"name": "LAST ARGUMENT OF KINGS",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship must have at least one SUPERHEAVY CHARGE weapon",
+					"options": []
+				},
+				{
+					"name": "OVERCHARGE CAPACITORS",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship can pour more power into its long-spool weapons than is strictly advisable. Whenever you remove a Charge Counter from one of its SUPERHEAVY weapons, you may choose to take 1 damage and give that weapon an Overcharge Counter, up to a maximum of 4 Overcharge Counters. This damage cannot be prevented in any way, but cannot reduce the ship below 1 HP. When you fire a weapon with Overcharge Counters, remove all Overcharge Counters from it and deal an additional +1d3 DAMAGE on hit for each counter removed this way.",
+					"options": []
+				},
+				{
+					"name": "MAXIMUM POWER",
+					"points": 0,
+					"optionType": "Tactic",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "One of this ship's SUPERHEAVY weapons with the Charge tag immediately removes all Charge Counters and gains 4 Overcharge Counters, up to a maximum of 4. The next attack made with that weapon gains +4 Reliable, but afterwards is destroyed and cannot be used again for the rest of the battle. When you use this tactic, this ship immediately takes 4 damage that cannot prevented in any way, but which cannot reduce it below 1 HP.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Superheavy"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Superheavy"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 7,
+			"shipPrefix": "FKS",
+			"class": "HESPERIS-CLASS",
+			"type": "BATTLECRUISER",
+			"hp": 23,
+			"defense": 13,
+			"traits": [
+				{
+					"name": "IMPACT-ASSURANCE TARGETING",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "1/round, you may choose one: \u2022 During your turn, remove 1 Flight Counter from one of your active PAYLOAD attacks. \u2022 During the Impact Phase, consume a hostile CAPITAL SHIP's LOCK ON when it rolls interdiction against one or more of your payload attacks to force it to reroll 1 Interdiction die and keep the worse result.",
+					"options": []
+				},
+				{
+					"name": "SELF-CONTAINED KILL VEHICLES",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship begins combat accompanied by a pair of Self-Contained Kill Vehicles - massive, independent munitions large enough to carry their own defenses. While unlaunched, each SCKV counts as a Capital Ship for the purpose of attacks and abiities, with 10 Hp, 10 DEFENSE, and an Auxiliary weapon slot. SCKVs cannot be boarded. If this ship is destroyed, its unlaunched SCKVs are harmlessly destroyed as well. You may launch one or both SCKVs as a maneuver during your turn. Treat them as SUPERHEAVY SINGLE-TARGET PAYLOAD -1 attacks that deal 12 damage and can be launched at one or two targets, tracking them each individually. SCKVs are also automatically launched whenever you move into Range 1-0 during you turn or whenever you begin your turn there. Once an SCKV is launched, it is considered destroyed and cannot be recalled. Whenever you take the All Ahead Full maneuver during your turn, each unlaunched SCKV under your control permanently increase its damage by +2 for the rest of the engagement ot a maximum of +8, and you may also assign one unlaunched SCKV to Defensive Screen as though it was a FRIGATE. Whenever a hostile ship destroys an unlaunched SCKV, that ship's battlegroup takes 1d6+1 AREA-TARGET damage. if an SCKV is destroyed while assigned to a Defensive Screen, then the ship it was screening takes 1d6 damge and the hostile ship's battlegroup takes 2d6 AREA-TARGET damage instead.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Superheavy"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"Escort"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 6,
+			"shipPrefix": "IPS-N",
+			"class": "GREENLAND-CLASS",
+			"type": "BATTLECARRIER",
+			"hp": 30,
+			"defense": 10,
+			"traits": [
+				{
+					"name": "HOOK-JAB",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "1/round whenever a CAPITAL SHIP, ESCORT, or WING in your battlegroup consumes LOCK ON as part of a single-target attack, you may also issue a command to one of this ship's WINGS for free.",
+					"options": []
+				},
+				{
+					"name": "BODY BLOW",
+					"points": 0,
+					"optionType": "Maneuver",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": 1,
+					"unique": false,
+					"tags": [
+						"Limited 1"
+					],
+					"desc": "Repair one of this ship\u2019s WINGS to full HP, even if it has been destroyed, and fire one SUPERHEAVY weapon or up to two PRIMARY weapons. You may then issue commands to all of this ship's WINGS for free.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Superheavy"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Primary"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 4,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		},
+		{
+			"points": 6,
+			"shipPrefix": "IPS-N",
+			"class": "EILAND-CLASS",
+			"type": "COMMAND CARRIER",
+			"hp": 30,
+			"defense": 10,
+			"traits": [
+				{
+					"name": "SUPERIOR LOGISTICS",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship has an additional 3 points that can only be spen on ESCORTS. This ship\u2019s ESCORTS begins each battle with 2 OVERSHIELD.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Superheavy"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Escort"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 2,
+					"points": 0,
+					"types": [
+						"Escort"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 3,
+					"points": 0,
+					"types": [
+						"Escort"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 4,
+					"points": 0,
+					"types": [
+						"System"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
+		}
+	]
+}
