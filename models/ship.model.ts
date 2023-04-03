@@ -7,7 +7,8 @@ export interface Ship {
   totalPoints: number,
   shipClass: ShipClass,
 	isFlagShip: boolean,
-  legacies?: string[]
+  legacies?: string[],
+	battleGroupIds: string[]
 }
 
 export interface ShipClass {

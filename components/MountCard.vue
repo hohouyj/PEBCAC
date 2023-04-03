@@ -4,15 +4,17 @@
 			<v-card-item>
 				<v-card-title>
 					{{ option.name }}
+					<v-btn icon="mdi-swap-horizontal" size="small" variant="text" @click.prevent="selectOption" class="float-right"></v-btn>
 				</v-card-title>
-				<template v-slot:append>
-					<v-btn icon="mdi-swap-horizontal" size="small" variant="text" @click.prevent="selectOption"></v-btn>
-				</template>
+
 				<v-card-subtitle>
 					{{ option.optionType }}
 				</v-card-subtitle>
+
 				<v-chip v-for="tag in option.tags" size="small">{{ tag }}</v-chip>
+
 			</v-card-item>
+
 			<v-card-text>
 				{{ option.desc }}
 			</v-card-text>

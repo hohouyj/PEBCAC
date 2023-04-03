@@ -18,6 +18,43 @@ export const useBattleGroupStore = defineStore({
 		battlegroups: [],
 		ships: []
 	} as RootState),
+	getters: {
+		getBattleGroups: (state) => state.battlegroups,
+		getShips: (state) => state.ships,
+		getBattleGroupById: (state) => {
+			return (bgId: string) => {
+				let bg = state.battlegroups.find((bg)=>bg.id === bgId)
+				return bg?bg:{
+					id: "",
+					name: "ID NOT FOUND",
+					shipIds: [],
+					points: 0
+				}
+			}
+		},
+		getShipById: (state) => {
+			return (shipId: string) => {
+				let ship = state.ships.find((ship)=>ship.id === shipId)
+				return ship?ship:{
+					id: '',
+					name: "SHIP ID NOT FOUND",
+					totalPoints: 0,
+					shipClass: {
+						points: 0,
+						shipPrefix: "",
+						class: "",
+						type: "",
+						hp: 0,
+						defense: 0,
+						traits: [],
+						mounts: []
+					},
+					isFlagShip: false,
+					battleGroupIds: []
+				}
+			}
+		}
+	},
 	actions: {
 		getBlankShip(): Ship {
 			return {
@@ -34,7 +71,8 @@ export const useBattleGroupStore = defineStore({
 					traits: [],
 					mounts: []
 				},
-				isFlagShip: false
+				isFlagShip: false,
+				battleGroupIds: []
 			}
 		},
 		getBattleGroupIdxById(id: string | string[]): number {
@@ -54,16 +92,15 @@ export const useBattleGroupStore = defineStore({
 		deleteBattleGroup(battleGroupId: string) {
 			this.battlegroups.splice(this.getBattleGroupIdxById(battleGroupId), 1)
 		},
-		getBattleGroup(battleGroupId: string | string[]): BattleGroup {
-			return this.battlegroups[this.getBattleGroupIdxById(battleGroupId)]
-		},
 		renameBattleGroup(battleGroupId: string | string[], newName: string) {
 			if (newName.length > 0) {
 				this.battlegroups[this.getBattleGroupIdxById(battleGroupId)].name = newName
 			}
 		},
-		addNewShipToBattleGroup(battleGroupId: string | string[]) {
+		addNewShipToBattleGroup(battleGroupId: string) {
 			const newShipId = uuidv4()
+			console.log(battleGroupId)
+			console.log(newShipId)
 			this.ships.push({
 				id: newShipId,
 				name: "New Ship",
@@ -78,8 +115,10 @@ export const useBattleGroupStore = defineStore({
 					traits: [],
 					mounts: []
 				},
-				isFlagShip: false
+				isFlagShip: false,
+				battleGroupIds: [battleGroupId]
 			})
+			console.log(this.ships[this.getShipIdxById(newShipId)])
 			this.battlegroups[this.getBattleGroupIdxById(battleGroupId)].shipIds.push(newShipId)
 		},
 		getShipIdxById(id: string) {
@@ -88,10 +127,23 @@ export const useBattleGroupStore = defineStore({
 			);
 		},
 		deleteShip(shipId: string) {
-			this.ships.splice(this.getBattleGroupIdxById(shipId), 1)
-		},
-		getShip(shipId: string): Ship {
-			return this.ships[this.getShipIdxById(shipId)]
+			console.log(shipId)
+
+			const bgIds = this.ships[this.getShipIdxById(shipId)].battleGroupIds
+			console.log(bgIds)
+			for (const bgId of bgIds) {
+				if (this.getBattleGroupIdxById(bgId) != -1) {
+					console.log(bgId)
+					const idx: number = this.battlegroups[this.getBattleGroupIdxById(bgId)].shipIds.indexOf(shipId)
+					console.log(idx)
+					if(idx != -1){
+						this.battlegroups[this.getBattleGroupIdxById(bgId)].shipIds.splice(idx, 1)
+					}
+				}
+			}
+			if (this.getShipIdxById(shipId) != -1) {
+				this.ships.splice(this.getShipIdxById(shipId), 1)
+			}
 		},
 		replaceShipClass(shipId: string, shipClass: ShipClass) {
 			const shipClassCopy = JSON.parse(JSON.stringify(shipClass))
