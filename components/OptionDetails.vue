@@ -26,11 +26,11 @@ const props = defineProps({
 })
 
 const emit = defineEmits<{
-  (e: 'changeOption', optionName: string): void
+  (e: 'changeOption', optionName: string, optionPoints: number): void
 }>()
 
 function changeOption(optionName: string){
-	emit('changeOption', optionName)
+	emit('changeOption', optionName, props.option.points)
 }
 </script>
 

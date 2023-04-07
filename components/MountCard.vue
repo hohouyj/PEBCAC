@@ -2,22 +2,30 @@
 	<div>
 		<v-card v-if="option.name.length > 0">
 			<v-card-item>
+				
 				<v-card-title>
-					{{ option.name }}
+					<span class="text-m">{{ option.points }}<v-icon icon="mdi-atom" size="x-small" class="pb-1"></v-icon></span>
+					 {{ option.name }} {{ option.damage }}
+					 
+					<v-btn icon="mdi-swap-horizontal" size="small" variant="text" @click.prevent="selectOption" class="float-right"></v-btn>
+					<div v-for="tag in option.tags" class="w-min float-right">
+						<Counter v-if="isCounter(tag)" :counterType="tag.split(' ')[0]" :maxcounter="Number(tag.split(' ')[1])" />
+					</div>
 				</v-card-title>
-				<template v-slot:append>
-					<v-btn icon="mdi-swap-horizontal" size="small" variant="text" @click.prevent="selectOption"></v-btn>
-				</template>
+
 				<v-card-subtitle>
 					{{ option.optionType }}
 				</v-card-subtitle>
+
 				<v-chip v-for="tag in option.tags" size="small">{{ tag }}</v-chip>
+
 			</v-card-item>
+
 			<v-card-text>
 				{{ option.desc }}
 			</v-card-text>
 		</v-card>
-
+		<NestedOptionCard v-for="o in option.options" :option="o"/>
 		<v-expansion-panels :model-value="isSelecting ? [0] : null" v-if="option.name.length == 0 || isSelecting">
 			<v-expansion-panel>
 				<v-expansion-panel-title>
@@ -72,12 +80,12 @@ function getValidOptionsList() {
 }
 
 const emit = defineEmits<{
-	(e: 'changeOption', mountIdx: number, optionName: string): void
+	(e: 'changeOption', mountIdx: number, optionName: string, optionPoints: number): void
 }>()
 
-function changeOption(optionName: string) {
+function changeOption(optionName: string, optionPoints: number) {
 	isSelecting.value = false
-	emit('changeOption', props.mount.idx, optionName)
+	emit('changeOption', props.mount.idx, optionName, optionPoints)
 }
 
 function selectOption() {
@@ -86,6 +94,19 @@ function selectOption() {
 
 const option = computed(getOptionFromJson)
 const validOptionsList = computed(getValidOptionsList)
+
+function isCounter(tag: string){
+	switch(tag.split(" ")[0].toLowerCase()){
+		case "reloading":
+			return true
+		case "limited":
+			return true
+		case "charge":
+			return true
+		default:
+			return false
+	}
+}
 </script>
 
 <style scoped></style>
