@@ -2,6 +2,7 @@ import { defineStore } from "pinia"
 import { BattleGroup } from "~~/models/battleGroup.model"
 import { v4 as uuidv4 } from "uuid"
 import { Ship, ShipClass } from "~~/models/ship.model"
+import { OptionMount } from "~~/models/optionMount.model"
 
 export type RootState = {
 	battlegroups: BattleGroup[],
@@ -33,7 +34,7 @@ export const useBattleGroupStore = defineStore({
 			}
 		},
 		getShipById: (state) => {
-			return (shipId: string) => {
+			return (shipId: string): Ship => {
 				let ship = state.ships.find((ship)=>ship.id === shipId)
 				return ship?ship:{
 					id: '',
@@ -52,6 +53,20 @@ export const useBattleGroupStore = defineStore({
 					isFlagShip: false,
 					battleGroupIds: []
 				}
+			}
+		},
+		getShipPointsById: (state) => {
+			return (shipId: string) => {
+				const ship = state.ships.find((ship)=>ship.id === shipId)
+				if(ship === undefined){
+					return 0
+				}
+				if(ship.name.length == 0 || ship.id.length == 0){
+					return 0
+				}
+				let sumMountPoints: number = 0
+				ship.shipClass.mounts.forEach(mount => {sumMountPoints+=mount.points})
+				return ship.shipClass.points+sumMountPoints
 			}
 		}
 	},
@@ -157,7 +172,8 @@ export const useBattleGroupStore = defineStore({
 		getMountIdx(shipId: string, mountIdx: number) {
 			return this.ships[this.getShipIdxById(shipId)].shipClass.mounts.findIndex((mount) => mount.idx === mountIdx)
 		},
-		replaceOption(shipId: string, mountIdx: number, optionName: string) {
+		replaceOption(shipId: string, mountIdx: number, optionName: string, optionPoints: number) {
+			this.ships[this.getShipIdxById(shipId)].shipClass.mounts[this.getMountIdx(shipId, mountIdx)].points = optionPoints
 			this.ships[this.getShipIdxById(shipId)].shipClass.mounts[this.getMountIdx(shipId, mountIdx)].optionName = optionName
 		}
 

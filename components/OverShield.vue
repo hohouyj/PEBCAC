@@ -2,7 +2,7 @@
 	<div class="grow-0 w-fit h-min py-4 px-10">
 		<v-row>
 			<div class="flex">
-			HP: {{ hp }} / {{ maxHp }}
+			OS: {{ hp }}
 			</div>
 			<v-text-field v-if="isEditing" v-model="hp" ref="editHp" @blur="saveHp"  @keyup.enter="saveHp" variant="outlined" class="hpInput" density="compact" autofocus/>
 			<v-icon v-else
@@ -14,7 +14,7 @@
 			</v-icon>
 		</v-row>
 		<v-row>
-		<v-rating v-model="hp" hover clearable :length="maxHp" density="compact" class="d-inline" empty-icon="mdi-hexagon-outline" full-icon="mdi-hexagon-slice-6"
+		<v-rating v-model="hp" hover clearable :length="hp" density="compact" class="d-inline" empty-icon="mdi-hexagon-outline" full-icon="mdi-hexagon-slice-6"
 			background-color="panel"/>
 		</v-row>
 	</div>
@@ -38,9 +38,6 @@ async function showHpInput() {
 
 function saveHp(){
 	isEditing.value = false
-	if(hp.value>props.maxHp){
-		hp.value = props.maxHp
-	}
 }
 
 </script>

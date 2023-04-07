@@ -9,27 +9,26 @@
 					<v-btn icon="mdi-delete" size="small" variant="text" @click.stop.prevent="deleteShip"
 						class="float-right"></v-btn>
 				</v-card-title>
-				<v-container v-if="getShipById(shipId).shipClass.class.length > 0" class="flex justify-start">
-						<v-container class="grow-0 w-min">
+				<v-container v-if="getShipById(shipId).shipClass.class.length > 0" class="flex justify-start flex-wrap">
+						<div class="grow-0 w-16 h-min p-4">
 							<v-row>
 								Points
 							</v-row>
 							<v-row>
-								{{ getShipById(shipId).shipClass.points }} <v-icon icon="mdi-atom"></v-icon>
+								{{ getShipPointsById(shipId) }} <v-icon icon="mdi-atom"></v-icon>
 							</v-row>
 
-						</v-container>
-						<v-container class="grow-0 w-min">
+						</div>
+						<div class="grow-0 w-16 h-min p-4">
 							<v-row>
 								Defense
 							</v-row>
 							<v-row>
 								{{ getShipById(shipId).shipClass.defense }} <v-icon icon="mdi-shield"></v-icon>
 							</v-row>
-
-						</v-container>
-
-						<HitPoints hpType="HP" :maxHp="getShipById(shipId).shipClass.hp" class="d-inline" />
+						</div>
+						<OverShield :maxHp="overShield" class="d-inline" />
+						<HitPoints :maxHp="getShipById(shipId).shipClass.hp" class="d-inline" />
 
 
 					</v-container>
@@ -94,11 +93,13 @@ const props = defineProps({
 
 const battleGroupStore = useBattleGroupStore()
 
-const { getShipById } = storeToRefs(battleGroupStore)
+const { getShipById, getShipPointsById } = storeToRefs(battleGroupStore)
 
 const isSelecting = ref(false)
 
 const isRenameing = ref(false)
+
+const overShield = ref(0)
 
 const newName = ref('')
 
@@ -111,8 +112,8 @@ function selectShipClass() {
 	isSelecting.value = !isSelecting.value
 }
 
-function replaceOption(mountIdx: number, optionName: string) {
-	battleGroupStore.replaceOption(props.shipId, mountIdx, optionName)
+function replaceOption(mountIdx: number, optionName: string, optionPoints: number) {
+	battleGroupStore.replaceOption(props.shipId, mountIdx, optionName, optionPoints)
 }
 
 async function showRenameInput() {

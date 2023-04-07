@@ -1,20 +1,21 @@
 <template>
-	<v-card>
-		<v-card-item>
-			<v-text-field ref="renameInput" :placeholder="getBattleGroupById(battleGroupId.toString()).name" v-if="isRenameing" v-model="newName" @blur="renameBattleGroup"
-				@keyup.enter="renameBattleGroup" variant="underlined">
-			</v-text-field>
+	<v-container>
 
-			<v-card-title v-else @click="showRenameInput">
-				{{ getBattleGroupById(battleGroupId.toString()).name }}
-			</v-card-title>
-		</v-card-item>
+		<v-text-field ref="renameInput" :placeholder="getBattleGroupById(battleGroupId.toString()).name" v-if="isRenameing"
+			v-model="newName" @blur="renameBattleGroup" @keyup.enter="renameBattleGroup" variant="underlined">
+		</v-text-field>
+
+		<h1 v-else @click="showRenameInput">
+			{{ getBattleGroupById(battleGroupId.toString()).name }}
+		</h1>
+
 		<div v-if="getBattleGroupById(battleGroupId.toString()).shipIds.length > 0">
-			<ShipCard v-for="shipId in getBattleGroupById(battleGroupId.toString()).shipIds" v-bind:key="shipId" :shipId="shipId" class="mx-5 mb-3" />
+			<ShipCard v-for="shipId in getBattleGroupById(battleGroupId.toString()).shipIds" v-bind:key="shipId"
+				:shipId="shipId" class="mx-5 mb-3" />
 		</div>
 
 		<v-btn @click="addNewShipToBattleGroup">Add Ship</v-btn>
-	</v-card>
+	</v-container>
 </template>
 
 <script setup lang="ts">
