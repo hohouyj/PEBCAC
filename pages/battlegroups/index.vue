@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>This is the battlegroup page</h1>
 		<v-card v-for="b in battlegroups" :to="`/battlegroups/${b.id}`" nuxt>
 			<v-card-item>
 				<v-card-title>

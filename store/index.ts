@@ -3,6 +3,8 @@ import { BattleGroup } from "~~/models/battleGroup.model"
 import { v4 as uuidv4 } from "uuid"
 import { Ship, ShipClass } from "~~/models/ship.model"
 import { OptionMount } from "~~/models/optionMount.model"
+import allOptions from "~/data/options.json"
+
 
 export type RootState = {
 	battlegroups: BattleGroup[],
@@ -24,8 +26,8 @@ export const useBattleGroupStore = defineStore({
 		getShips: (state) => state.ships,
 		getBattleGroupById: (state) => {
 			return (bgId: string) => {
-				let bg = state.battlegroups.find((bg)=>bg.id === bgId)
-				return bg?bg:{
+				let bg = state.battlegroups.find((bg) => bg.id === bgId)
+				return bg ? bg : {
 					id: "",
 					name: "ID NOT FOUND",
 					shipIds: [],
@@ -35,8 +37,8 @@ export const useBattleGroupStore = defineStore({
 		},
 		getShipById: (state) => {
 			return (shipId: string): Ship => {
-				let ship = state.ships.find((ship)=>ship.id === shipId)
-				return ship?ship:{
+				let ship = state.ships.find((ship) => ship.id === shipId)
+				return ship ? ship : {
 					id: '',
 					name: "SHIP ID NOT FOUND",
 					totalPoints: 0,
@@ -56,17 +58,61 @@ export const useBattleGroupStore = defineStore({
 			}
 		},
 		getShipPointsById: (state) => {
+			//eiland + carriers one time discount 3 for wings and escorts escort + wing - 3 (min 0)
+			// test farragut, amazon and greenland eiland
+			//amazon has escort + wing - 4 (min 0)
+			//crieton superheavy -1 pt (min 0)
 			return (shipId: string) => {
-				const ship = state.ships.find((ship)=>ship.id === shipId)
-				if(ship === undefined){
+				const ship = state.ships.find((ship) => ship.id === shipId)
+				let wingDiscount = 0
+				let superheavyDiscount = 0
+
+				if (ship === undefined) {
 					return 0
 				}
-				if(ship.name.length == 0 || ship.id.length == 0){
+				if (ship.name.length == 0 || ship.id.length == 0) {
 					return 0
 				}
+				if (ship.shipClass.class.includes("CREIGHTON-CLASS")) {
+					superheavyDiscount = 1
+				}
+				if (ship.shipClass.type.includes("CARRIER") && !(ship.shipClass.type === "BATTLECARRIER")) {
+					wingDiscount = 3
+				}
+				if (ship.shipClass.class === "AMAZON-CLASS") {
+					wingDiscount++
+				}
+
 				let sumMountPoints: number = 0
-				ship.shipClass.mounts.forEach(mount => {sumMountPoints+=mount.points})
-				return ship.shipClass.points+sumMountPoints
+				let totalWingEscortPoints: number = 0
+				let totalSuperheavyPoints = 0
+				ship.shipClass.mounts.forEach(mount => {
+					if (!(mount.optionName === '')) {
+						const equippedOptionType = allOptions.options.filter(option => option.name === mount.optionName)[0].optionType
+
+						if (mount.types.includes("Wing") || mount.types.includes("Escort")) {
+							if (equippedOptionType === "Wing" || equippedOptionType === "Escort") {
+								totalWingEscortPoints += mount.points
+							}else{
+								sumMountPoints += mount.points
+							}
+
+						}else if(mount.types.includes("Superheavy")){
+							if (equippedOptionType === "Superheavy") {
+								totalSuperheavyPoints += mount.points
+							}else{
+								sumMountPoints += mount.points
+							}
+						}
+						else {
+							sumMountPoints += mount.points
+						}
+					}
+				})
+				totalWingEscortPoints -= wingDiscount
+				totalSuperheavyPoints -= superheavyDiscount
+
+				return ship.shipClass.points + sumMountPoints + Math.max(totalWingEscortPoints,0) + Math.max(totalSuperheavyPoints,0)
 			}
 		}
 	},
@@ -151,7 +197,7 @@ export const useBattleGroupStore = defineStore({
 					console.log(bgId)
 					const idx: number = this.battlegroups[this.getBattleGroupIdxById(bgId)].shipIds.indexOf(shipId)
 					console.log(idx)
-					if(idx != -1){
+					if (idx != -1) {
 						this.battlegroups[this.getBattleGroupIdxById(bgId)].shipIds.splice(idx, 1)
 					}
 				}

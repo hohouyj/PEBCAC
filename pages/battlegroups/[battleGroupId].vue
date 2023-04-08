@@ -1,5 +1,5 @@
 <template>
-	<v-container>
+	<div class="w-100">
 
 		<v-text-field ref="renameInput" :placeholder="getBattleGroupById(battleGroupId.toString()).name" v-if="isRenameing"
 			v-model="newName" @blur="renameBattleGroup" @keyup.enter="renameBattleGroup" variant="underlined">
@@ -9,13 +9,13 @@
 			{{ getBattleGroupById(battleGroupId.toString()).name }}
 		</h1>
 
-		<div v-if="getBattleGroupById(battleGroupId.toString()).shipIds.length > 0">
+		<div v-if="getBattleGroupById(battleGroupId.toString()).shipIds.length > 0" class="d-flex flex-wrap w-100">
 			<ShipCard v-for="shipId in getBattleGroupById(battleGroupId.toString()).shipIds" v-bind:key="shipId"
 				:shipId="shipId" class="mx-5 mb-3" />
 		</div>
 
 		<v-btn @click="addNewShipToBattleGroup">Add Ship</v-btn>
-	</v-container>
+	</div>
 </template>
 
 <script setup lang="ts">
@@ -48,6 +48,9 @@ async function showRenameInput() {
 	renameInput.value?.focus()
 }
 
+definePageMeta({
+	layout: 'battlegroups'
+})
 </script>
 
 <style scoped></style>

@@ -1,14 +1,11 @@
 <template>
 	<div>
-		<v-btn>
+		<v-btn to="/battlegroups" nuxt>
 			BATTLEGROUPS
 		</v-btn>
-
-		<HitPoints :maxHp="30" hpType="OS" />
-		<v-btn density="compact">
+		<v-btn to="/compendium" nuxt>
 			COMPENDIUM
 		</v-btn>
-		<v-btn icon="mdi-swap-horizontal" size="small" variant="text" class="float-right" density="compact"></v-btn>
 	</div>
 </template>
 

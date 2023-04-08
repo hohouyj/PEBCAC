@@ -538,7 +538,7 @@
 					],
 					"optionName": "",
 					"tagWhiteList": [],
-					"tagBlackList": []
+					"tagBlackList": ["payload"]
 				},
 				{
 					"idx": 1,
@@ -548,7 +548,7 @@
 					],
 					"optionName": "",
 					"tagWhiteList": [],
-					"tagBlackList": []
+					"tagBlackList": ["payload"]
 				}
 			]
 		},
@@ -649,7 +649,7 @@
 						"Primary"
 					],
 					"optionName": "",
-					"tagWhiteList": [],
+					"tagWhiteList": ["payload"],
 					"tagBlackList": []
 				},
 				{
@@ -714,6 +714,16 @@
 					],
 					"optionName": "",
 					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Escort", "Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": ["boarding"],
 					"tagBlackList": []
 				}
 			]
@@ -930,7 +940,7 @@
 					"idx": 3,
 					"points": 0,
 					"types": [
-						"Modular"
+						"Modular","Auxiliary","System","Escort","Wing"
 					],
 					"optionName": "",
 					"tagWhiteList": [],
@@ -1555,7 +1565,7 @@
 						"Superheavy"
 					],
 					"optionName": "",
-					"tagWhiteList": [],
+					"tagWhiteList": ["charge"],
 					"tagBlackList": []
 				},
 				{
