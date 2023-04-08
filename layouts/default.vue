@@ -2,7 +2,7 @@
 	
 		<div>
 			<header class="shadow-sm bg-white">
-				<nav class="container mx-auto p-4 flex justify-between">
+				<nav class="mx-auto p-4 flex justify-between">
 					<NuxtLink to="/" class="font-bold">PEBCAC</NuxtLink>
 					<ul class="flex gap-4">
 						<li>
@@ -18,11 +18,9 @@
 				</nav>
 			</header>
 		</div>
-		<v-container>
 		<div class="container mx-auto p-4">
 			<slot />
 		</div>
-	</v-container>
 </template>
 
 <style>

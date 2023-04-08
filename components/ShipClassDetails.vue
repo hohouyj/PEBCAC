@@ -7,7 +7,7 @@
 						Points: {{ shipClass.points }} Hp: {{ shipClass.hp }} Defense: {{ shipClass.defense }}
 					</v-card-title>
 					<template v-slot:append>
-						<v-btn icon="mdi-check" size="small" variant="text" @click.prevent="$emit('changeShipClass', shipClass)"></v-btn>
+						<v-btn icon="mdi-check" size="small" variant="text" @click.prevent="changeShipClass(shipClass)"></v-btn>
 					</template>
 					<v-chip close v-for="mount in shipClass.mounts">{{ mount.types[0] }}</v-chip>
 				</v-card-item>
@@ -23,6 +23,12 @@ import { ShipClass } from '~~/models/ship.model';
 const emit = defineEmits<{
   (e: 'changeShipClass', shipClass: ShipClass): void
 }>()
+
+
+function changeShipClass(shipClass: ShipClass){
+	console.log(shipClass)
+	emit('changeShipClass', shipClass)
+}
 
 const props = defineProps({
 	shipClass: { type: Object as PropType<ShipClass>, required: true }
