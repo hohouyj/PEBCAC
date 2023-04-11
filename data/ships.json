@@ -1857,6 +1857,54 @@
 					"tagBlackList": []
 				}
 			]
+		},
+		{
+			"points": 3,
+			"shipPrefix": "GMS",
+			"class": "EBRO-CLASS",
+			"type": "LIGHT CARRIER",
+			"hp": 14,
+			"defense": 15,
+			"traits": [
+				{
+					"name": "ESCORT FORMATION",
+					"points": 0,
+					"optionType": "Trait",
+					"hp": null,
+					"tenacity": null,
+					"range": null,
+					"damage": null,
+					"reloading": null,
+					"charge": null,
+					"limited": null,
+					"unique": false,
+					"tags": [],
+					"desc": "This ship can be assigned to a DEFENSIVE SCREEN as though it was a FRIGATE.",
+					"options": []
+				}
+			],
+			"mounts": [
+				{
+					"idx": 0,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				},
+				{
+					"idx": 1,
+					"points": 0,
+					"types": [
+						"Wing"
+					],
+					"optionName": "",
+					"tagWhiteList": [],
+					"tagBlackList": []
+				}
+			]
 		}
 	]
 }

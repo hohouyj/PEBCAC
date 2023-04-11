@@ -2,12 +2,13 @@
 	<div>
 		<v-card v-if="option.name.length > 0">
 			<v-card-item>
-				
+
 				<v-card-title>
 					<span class="text-m">{{ option.points }}<v-icon icon="mdi-atom" size="x-small" class="pb-1"></v-icon></span>
-					 {{ option.name }} {{ option.damage }}
-					 
-					<v-btn icon="mdi-swap-horizontal" size="small" variant="text" @click.prevent="selectOption" class="float-right"></v-btn>
+					{{ option.name }} {{ option.damage }}
+
+					<v-btn icon="mdi-swap-horizontal" size="small" variant="text" @click.prevent="selectOption"
+						class="float-right"></v-btn>
 					<div v-for="tag in option.tags" class="w-min float-right">
 						<Counter v-if="isCounter(tag)" :counterType="tag.split(' ')[0]" :maxcounter="Number(tag.split(' ')[1])" />
 					</div>
@@ -16,8 +17,10 @@
 				<v-card-subtitle>
 					{{ option.optionType }}
 				</v-card-subtitle>
-
-				<v-chip v-for="tag in option.tags" size="small">{{ tag }}</v-chip>
+				
+				<HitPoints v-if="option.hp" :maxHp="option.hp" />
+				
+				<v-chip v-for="tag in getTags" size="small">{{ tag }}</v-chip>
 
 			</v-card-item>
 
@@ -25,7 +28,7 @@
 				{{ option.desc }}
 			</v-card-text>
 		</v-card>
-		<NestedOptionCard v-for="o in option.options" :option="o"/>
+		<NestedOptionCard v-for="o in option.options" :option="o" />
 		<v-expansion-panels :model-value="isSelecting ? [0] : null" v-if="option.name.length == 0 || isSelecting">
 			<v-expansion-panel>
 				<v-expansion-panel-title>
@@ -75,8 +78,26 @@ function getOptionFromJson() {
 	}
 }
 
+function checkTagsInList(tags: string[], list: string[]) {
+	let containsTag = false;
+	for (const optionTag of tags) {
+		for (const listTag of list) {
+			if (optionTag.toLowerCase().includes(listTag))
+				containsTag = true;
+			break;
+		}
+	}
+	return containsTag
+}
+
 function getValidOptionsList() {
-	return options.options.filter((o) => props.mount.types.includes(o.optionType))
+	if (props.mount.tagBlackList.length > 0) {
+		return options.options.filter((o) => (props.mount.types.includes(o.optionType) && !checkTagsInList(o.tags, props.mount.tagBlackList)))
+	} else if (props.mount.tagWhiteList.length > 0) {
+		return options.options.filter((o) => (props.mount.types.includes(o.optionType) && checkTagsInList(o.tags, props.mount.tagWhiteList)))
+	} else {
+		return options.options.filter((o) => props.mount.types.includes(o.optionType))
+	}
 }
 
 const emit = defineEmits<{
@@ -95,8 +116,16 @@ function selectOption() {
 const option = computed(getOptionFromJson)
 const validOptionsList = computed(getValidOptionsList)
 
-function isCounter(tag: string){
-	switch(tag.split(" ")[0].toLowerCase()){
+const getTags = computed(()=>{
+	let reTags = option.value.tags.slice()
+	if(option.value.tenacity){
+		reTags.push("Tenacity "+option.value.tenacity.toString())
+	}
+	return reTags
+})
+
+function isCounter(tag: string) {
+	switch (tag.split(" ")[0].toLowerCase()) {
 		case "reloading":
 			return true
 		case "limited":

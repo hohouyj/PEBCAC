@@ -14,7 +14,9 @@
 				:shipId="shipId" class="mx-5 mb-3" />
 		</div>
 
-		<v-btn @click="addNewShipToBattleGroup">Add Ship</v-btn>
+		<v-btn v-if="getBattleGroupById(battleGroupId.toString()).shipIds.length > 0" @click="addNewShipToBattleGroup">Add Ship</v-btn>
+		<v-btn v-else @click="addFlagShipToBattleGroup">Add Flagship</v-btn>
+		
 	</div>
 </template>
 
@@ -32,6 +34,10 @@ const newName = ref('')
 
 function addNewShipToBattleGroup() {
 	battleGroupStore.addNewShipToBattleGroup(battleGroupId.toString())
+}
+
+function addFlagShipToBattleGroup() {
+	battleGroupStore.addFlagShipToBattleGroup(battleGroupId.toString())
 }
 
 function renameBattleGroup() {

@@ -17,7 +17,6 @@
 							<v-row>
 								{{ getShipPointsById(shipId) }} <v-icon icon="mdi-atom"></v-icon>
 							</v-row>
-
 						</div>
 						<div class="grow-0 w-16 h-min p-4">
 							<v-row>
@@ -76,6 +75,8 @@
 				<TraitCard class="mx-5 mb-3" :trait="trait" v-for="trait in getShipById(shipId).shipClass.traits" />
 				<MountCard class="mx-8 mb-3" :mount="mount" :optionName="mount.optionName"
 					v-for="(mount, mountIdx) in getShipById(shipId).shipClass.mounts" @changeOption="replaceOption" />
+				<MountCard class="mx-8 mb-3" :mount="getShipById(shipId).flagShipMount[0]" :optionName="getShipById(shipId).flagShipMount[0].optionName"
+				v-if="getShipById(shipId).isFlagShip" @changeOption="replaceOption" />
 			</v-card>
 		</v-card>
 	</div>
