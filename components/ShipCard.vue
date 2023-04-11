@@ -6,6 +6,7 @@
 					@blur="renameShip" @keyup.enter="renameShip" variant="underlined" autofocus></v-text-field>
 				<v-card-title v-else @click.stop.prevent="showRenameInput">
 					{{ getShipById(shipId).name }}
+					<v-icon v-if="getShipById(shipId).isFlagShip" icon="mdi-flag"></v-icon>
 					<v-btn icon="mdi-delete" size="small" variant="text" @click.stop.prevent="deleteShip"
 						class="float-right"></v-btn>
 				</v-card-title>
@@ -27,9 +28,7 @@
 							</v-row>
 						</div>
 						<OverShield :maxHp="overShield" class="d-inline" />
-						<HitPoints :maxHp="getShipById(shipId).shipClass.hp" class="d-inline" />
-
-
+						<HitPoints :maxHp="getHp" class="d-inline" />
 					</v-container>
 			</v-card-item>
 
@@ -76,7 +75,7 @@
 				<MountCard class="mx-8 mb-3" :mount="mount" :optionName="mount.optionName"
 					v-for="(mount, mountIdx) in getShipById(shipId).shipClass.mounts" @changeOption="replaceOption" />
 				<MountCard class="mx-8 mb-3" :mount="getShipById(shipId).flagShipMount[0]" :optionName="getShipById(shipId).flagShipMount[0].optionName"
-				v-if="getShipById(shipId).isFlagShip" @changeOption="replaceOption" />
+				v-if="getShipById(shipId).isFlagShip" @changeOption="replaceFlagShipOption" />
 			</v-card>
 		</v-card>
 	</div>
@@ -117,6 +116,10 @@ function replaceOption(mountIdx: number, optionName: string, optionPoints: numbe
 	battleGroupStore.replaceOption(props.shipId, mountIdx, optionName, optionPoints)
 }
 
+function replaceFlagShipOption(mountIdx: number, optionName: string, optionPoints: number){
+	battleGroupStore.replaceFlagShipOption(props.shipId, optionName, optionPoints)
+}
+
 async function showRenameInput() {
 	isRenameing.value = true
 }
@@ -130,6 +133,15 @@ function renameShip() {
 function deleteShip() {
 	battleGroupStore.deleteShip(props.shipId)
 }
+
+const getHp = computed(()=>{
+	const ship = battleGroupStore.getShipById(props.shipId)
+	if(ship.isFlagShip){
+		return ship.shipClass.hp+3
+	}else{
+		return ship.shipClass.hp
+	}
+})
 </script>
 
 <style scoped></style>

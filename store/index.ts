@@ -256,6 +256,10 @@ export const useBattleGroupStore = defineStore({
 		replaceOption(shipId: string, mountIdx: number, optionName: string, optionPoints: number) {
 			this.ships[this.getShipIdxById(shipId)].shipClass.mounts[this.getMountIdx(shipId, mountIdx)].points = optionPoints
 			this.ships[this.getShipIdxById(shipId)].shipClass.mounts[this.getMountIdx(shipId, mountIdx)].optionName = optionName
+		},
+		replaceFlagShipOption(shipId: string, optionName: string, optionPoints: number) {
+			this.ships[this.getShipIdxById(shipId)].flagShipMount[0].points = optionPoints
+			this.ships[this.getShipIdxById(shipId)].flagShipMount[0].optionName = optionName
 		}
 
 	}
