@@ -1,34 +1,9 @@
 <template>
 	<div>
-		<v-card v-if="option.name.length > 0">
-			<v-card-item>
-
-				<v-card-title>
-					<span class="text-m">{{ option.points }}<v-icon icon="mdi-atom" size="x-small" class="pb-1"></v-icon></span>
-					{{ option.name }} {{ option.damage }}
-
-					<v-btn icon="mdi-swap-horizontal" size="small" variant="text" @click.prevent="selectOption"
-						class="float-right"></v-btn>
-					<div v-for="tag in option.tags" class="w-min float-right">
-						<Counter v-if="isCounter(tag)" :counterType="tag.split(' ')[0]" :maxcounter="Number(tag.split(' ')[1])" />
-					</div>
-				</v-card-title>
-
-				<v-card-subtitle>
-					{{ option.optionType }}
-				</v-card-subtitle>
-				
-				<HitPoints v-if="option.hp" :maxHp="option.hp" />
-				
-				<v-chip v-for="tag in getTags" size="small">{{ tag }}</v-chip>
-
-			</v-card-item>
-
-			<v-card-text>
-				{{ option.desc }}
-			</v-card-text>
-		</v-card>
-		<NestedOptionCard v-for="o in option.options" :option="o" />
+		<OptionCard v-if="option.name.length > 0" :option="option" @selectOption="selectOption"/>
+			<v-container v-if="option.options.length>0">
+				<OptionCard v-for="o in option.options" :option="o" :isNested="true"/>
+			</v-container>
 		<v-expansion-panels :model-value="isSelecting ? [0] : null" v-if="option.name.length == 0 || isSelecting">
 			<v-expansion-panel>
 				<v-expansion-panel-title>
