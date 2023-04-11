@@ -53,6 +53,7 @@ export const useBattleGroupStore = defineStore({
 						mounts: []
 					},
 					isFlagShip: false,
+					flagShipMount: [],
 					battleGroupIds: []
 				}
 			}
@@ -133,6 +134,7 @@ export const useBattleGroupStore = defineStore({
 					mounts: []
 				},
 				isFlagShip: false,
+				flagShipMount: [],
 				battleGroupIds: []
 			}
 		},
@@ -177,6 +179,39 @@ export const useBattleGroupStore = defineStore({
 					mounts: []
 				},
 				isFlagShip: false,
+				flagShipMount: [],
+				battleGroupIds: [battleGroupId]
+			})
+			console.log(this.ships[this.getShipIdxById(newShipId)])
+			this.battlegroups[this.getBattleGroupIdxById(battleGroupId)].shipIds.push(newShipId)
+		},
+		addFlagShipToBattleGroup(battleGroupId: string) {
+			const newShipId = uuidv4()
+			console.log(battleGroupId)
+			console.log(newShipId)
+			this.ships.push({
+				id: newShipId,
+				name: "New Ship",
+				totalPoints: 0,
+				shipClass: {
+					points: 0,
+					shipPrefix: "",
+					class: "",
+					type: "",
+					hp: 0,
+					defense: 0,
+					traits: [],
+					mounts: []
+				},
+				isFlagShip: true,
+				flagShipMount: [{
+					idx: 0,
+					points: 0,
+					types: ["System"],
+					optionName: '',
+					tagWhiteList: [],
+					tagBlackList: []
+				}],
 				battleGroupIds: [battleGroupId]
 			})
 			console.log(this.ships[this.getShipIdxById(newShipId)])

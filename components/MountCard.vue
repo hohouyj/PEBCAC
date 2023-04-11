@@ -17,8 +17,10 @@
 				<v-card-subtitle>
 					{{ option.optionType }}
 				</v-card-subtitle>
-
-				<v-chip v-for="tag in option.tags" size="small">{{ tag }}</v-chip>
+				
+				<HitPoints v-if="option.hp" :maxHp="option.hp" />
+				
+				<v-chip v-for="tag in getTags" size="small">{{ tag }}</v-chip>
 
 			</v-card-item>
 
@@ -79,9 +81,9 @@ function getOptionFromJson() {
 function checkTagsInList(tags: string[], list: string[]) {
 	let containsTag = false;
 	for (const optionTag of tags) {
-		for(const listTag of list) {
-			if(optionTag.toLowerCase().includes(listTag))
-			containsTag = true;
+		for (const listTag of list) {
+			if (optionTag.toLowerCase().includes(listTag))
+				containsTag = true;
 			break;
 		}
 	}
@@ -113,6 +115,14 @@ function selectOption() {
 
 const option = computed(getOptionFromJson)
 const validOptionsList = computed(getValidOptionsList)
+
+const getTags = computed(()=>{
+	let reTags = option.value.tags.slice()
+	if(option.value.tenacity){
+		reTags.push("Tenacity "+option.value.tenacity.toString())
+	}
+	return reTags
+})
 
 function isCounter(tag: string) {
 	switch (tag.split(" ")[0].toLowerCase()) {

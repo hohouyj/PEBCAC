@@ -7,6 +7,7 @@ export interface Ship {
   totalPoints: number,
   shipClass: ShipClass,
 	isFlagShip: boolean,
+	flagShipMount: OptionMount[],
   legacies?: string[],
 	battleGroupIds: string[]
 }
