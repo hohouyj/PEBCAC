@@ -54,9 +54,7 @@
 						<v-btn icon="mdi-swap-horizontal" size="small" variant="text" @click.prevent="selectShipClass"
 							class="float-right"></v-btn>
 					</v-card-title>
-					
 				</v-card-item>
-
 				<v-expansion-panels :model-value="isSelecting ? [0] : null" v-if="isSelecting">
 					<v-expansion-panel>
 						<v-expansion-panel-title>
