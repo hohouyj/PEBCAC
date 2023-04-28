@@ -1,5 +1,5 @@
 <template>
-	<div draggable="true" class="max-w-4xl">
+	<div draggable="true" class="max-w-2xl min-w-2xl">
 		<v-card>
 			<v-card-item>
 				<v-text-field ref="renameInput" :placeholder="getShipById(shipId).name" v-if="isRenameing" v-model="newName"
